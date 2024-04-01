@@ -124,6 +124,39 @@
 		A3DB4A8D2BBAAF5D00E88EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A132BBAAF5B00E88EC5 /* LaunchScreen.storyboard */; };
 		A3DB4A8E2BBAAF5D00E88EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A152BBAAF5B00E88EC5 /* Main.storyboard */; };
 		A3DB4A8F2BBAAF5D00E88EC5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A182BBAAF5B00E88EC5 /* Info.plist */; };
+		A3DB4ACB2BBAB90500E88EC5 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A902BBAB90400E88EC5 /* Rotatable.swift */; };
+		A3DB4ACC2BBAB90500E88EC5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A922BBAB90400E88EC5 /* Fonts.swift */; };
+		A3DB4ACD2BBAB90500E88EC5 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A942BBAB90400E88EC5 /* Error.swift */; };
+		A3DB4ACE2BBAB90500E88EC5 /* UILabel+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A982BBAB90400E88EC5 /* UILabel+App.swift */; };
+		A3DB4ACF2BBAB90500E88EC5 /* UIButton+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A9A2BBAB90400E88EC5 /* UIButton+App.swift */; };
+		A3DB4AD02BBAB90500E88EC5 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A9C2BBAB90400E88EC5 /* UIColor+App.swift */; };
+		A3DB4AD12BBAB90500E88EC5 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A9E2BBAB90400E88EC5 /* UIView+Constraints.swift */; };
+		A3DB4AD22BBAB90500E88EC5 /* UIView+NIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A9F2BBAB90400E88EC5 /* UIView+NIB.swift */; };
+		A3DB4AD32BBAB90500E88EC5 /* UIView+KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AA02BBAB90400E88EC5 /* UIView+KeyboardObserver.swift */; };
+		A3DB4AD42BBAB90500E88EC5 /* UIView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AA12BBAB90400E88EC5 /* UIView+ViewController.swift */; };
+		A3DB4AD52BBAB90500E88EC5 /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AA32BBAB90400E88EC5 /* UIFont+App.swift */; };
+		A3DB4AD62BBAB90500E88EC5 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AA52BBAB90400E88EC5 /* UIImage+Resize.swift */; };
+		A3DB4AD72BBAB90500E88EC5 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AA72BBAB90400E88EC5 /* UIViewController+Keyboard.swift */; };
+		A3DB4AD82BBAB90500E88EC5 /* UITextField+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AA92BBAB90400E88EC5 /* UITextField+App.swift */; };
+		A3DB4AD92BBAB90500E88EC5 /* UserDefaults+FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AAB2BBAB90400E88EC5 /* UserDefaults+FirstLaunch.swift */; };
+		A3DB4ADA2BBAB90500E88EC5 /* UILabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AAD2BBAB90400E88EC5 /* UILabel+Style.swift */; };
+		A3DB4ADB2BBAB90500E88EC5 /* UIButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AAF2BBAB90400E88EC5 /* UIButton+Style.swift */; };
+		A3DB4ADC2BBAB90500E88EC5 /* RadioButtonsGroup+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AB12BBAB90400E88EC5 /* RadioButtonsGroup+Rx.swift */; };
+		A3DB4ADD2BBAB90500E88EC5 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AB42BBAB90400E88EC5 /* GlobalFunctions.swift */; };
+		A3DB4ADE2BBAB90500E88EC5 /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AB62BBAB90500E88EC5 /* UITextField+Rx.swift */; };
+		A3DB4ADF2BBAB90500E88EC5 /* RTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AB82BBAB90500E88EC5 /* RTL.swift */; };
+		A3DB4AE02BBAB90500E88EC5 /* String+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4ABA2BBAB90500E88EC5 /* String+Mask.swift */; };
+		A3DB4AE12BBAB90500E88EC5 /* String+FormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4ABB2BBAB90500E88EC5 /* String+FormatDate.swift */; };
+		A3DB4AE22BBAB90500E88EC5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4ABD2BBAB90500E88EC5 /* Validator.swift */; };
+		A3DB4AE32BBAB90500E88EC5 /* EmptyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4ABE2BBAB90500E88EC5 /* EmptyValidator.swift */; };
+		A3DB4AE42BBAB90500E88EC5 /* CommonValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4ABF2BBAB90500E88EC5 /* CommonValidator.swift */; };
+		A3DB4AE52BBAB90500E88EC5 /* LoginValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AC02BBAB90500E88EC5 /* LoginValidators.swift */; };
+		A3DB4AE62BBAB90500E88EC5 /* AddCardValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AC12BBAB90500E88EC5 /* AddCardValidator.swift */; };
+		A3DB4AE72BBAB90500E88EC5 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AC32BBAB90500E88EC5 /* CreditCard.swift */; };
+		A3DB4AE82BBAB90500E88EC5 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AC42BBAB90500E88EC5 /* CardType.swift */; };
+		A3DB4AE92BBAB90500E88EC5 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AC62BBAB90500E88EC5 /* NSObject+ClassName.swift */; };
+		A3DB4AEA2BBAB90500E88EC5 /* UITextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AC82BBAB90500E88EC5 /* UITextField+Style.swift */; };
+		A3DB4AEB2BBAB90500E88EC5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4ACA2BBAB90500E88EC5 /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -245,6 +278,39 @@
 		A3DB4A142BBAAF5B00E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3DB4A162BBAAF5B00E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3DB4A182BBAAF5B00E88EC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DB4A902BBAB90400E88EC5 /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
+		A3DB4A922BBAB90400E88EC5 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		A3DB4A942BBAB90400E88EC5 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		A3DB4A982BBAB90400E88EC5 /* UILabel+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+App.swift"; sourceTree = "<group>"; };
+		A3DB4A9A2BBAB90400E88EC5 /* UIButton+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+App.swift"; sourceTree = "<group>"; };
+		A3DB4A9C2BBAB90400E88EC5 /* UIColor+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
+		A3DB4A9E2BBAB90400E88EC5 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		A3DB4A9F2BBAB90400E88EC5 /* UIView+NIB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NIB.swift"; sourceTree = "<group>"; };
+		A3DB4AA02BBAB90400E88EC5 /* UIView+KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+KeyboardObserver.swift"; sourceTree = "<group>"; };
+		A3DB4AA12BBAB90400E88EC5 /* UIView+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewController.swift"; sourceTree = "<group>"; };
+		A3DB4AA32BBAB90400E88EC5 /* UIFont+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
+		A3DB4AA52BBAB90400E88EC5 /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		A3DB4AA72BBAB90400E88EC5 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		A3DB4AA92BBAB90400E88EC5 /* UITextField+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+App.swift"; sourceTree = "<group>"; };
+		A3DB4AAB2BBAB90400E88EC5 /* UserDefaults+FirstLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+FirstLaunch.swift"; sourceTree = "<group>"; };
+		A3DB4AAD2BBAB90400E88EC5 /* UILabel+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Style.swift"; sourceTree = "<group>"; };
+		A3DB4AAF2BBAB90400E88EC5 /* UIButton+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Style.swift"; sourceTree = "<group>"; };
+		A3DB4AB12BBAB90400E88EC5 /* RadioButtonsGroup+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RadioButtonsGroup+Rx.swift"; sourceTree = "<group>"; };
+		A3DB4AB42BBAB90400E88EC5 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		A3DB4AB62BBAB90500E88EC5 /* UITextField+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Rx.swift"; sourceTree = "<group>"; };
+		A3DB4AB82BBAB90500E88EC5 /* RTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTL.swift; sourceTree = "<group>"; };
+		A3DB4ABA2BBAB90500E88EC5 /* String+Mask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Mask.swift"; sourceTree = "<group>"; };
+		A3DB4ABB2BBAB90500E88EC5 /* String+FormatDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FormatDate.swift"; sourceTree = "<group>"; };
+		A3DB4ABD2BBAB90500E88EC5 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		A3DB4ABE2BBAB90500E88EC5 /* EmptyValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyValidator.swift; sourceTree = "<group>"; };
+		A3DB4ABF2BBAB90500E88EC5 /* CommonValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonValidator.swift; sourceTree = "<group>"; };
+		A3DB4AC02BBAB90500E88EC5 /* LoginValidators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginValidators.swift; sourceTree = "<group>"; };
+		A3DB4AC12BBAB90500E88EC5 /* AddCardValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardValidator.swift; sourceTree = "<group>"; };
+		A3DB4AC32BBAB90500E88EC5 /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		A3DB4AC42BBAB90500E88EC5 /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		A3DB4AC62BBAB90500E88EC5 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		A3DB4AC82BBAB90500E88EC5 /* UITextField+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Style.swift"; sourceTree = "<group>"; };
+		A3DB4ACA2BBAB90500E88EC5 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,9 +344,9 @@
 			isa = PBXGroup;
 			children = (
 				A3DB494E2BBAAF5B00E88EC5 /* ✦ Application */,
+				A3DB4A1A2BBAAF5C00E88EC5 /* Utils */,
 				A3DB4A192BBAAF5C00E88EC5 /* Generated */,
 				A3DB4A102BBAAF5B00E88EC5 /* Resources */,
-				A3DB4A1A2BBAAF5C00E88EC5 /* Utils */,
 			);
 			path = "ios-starter";
 			sourceTree = "<group>";
@@ -1055,11 +1121,11 @@
 		A3DB4A102BBAAF5B00E88EC5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB4A172BBAAF5B00E88EC5 /* Fonts */,
 				A3DB4A112BBAAF5B00E88EC5 /* spinner.json */,
 				A3DB4A122BBAAF5B00E88EC5 /* Assets.xcassets */,
 				A3DB4A132BBAAF5B00E88EC5 /* LaunchScreen.storyboard */,
 				A3DB4A152BBAAF5B00E88EC5 /* Main.storyboard */,
-				A3DB4A172BBAAF5B00E88EC5 /* Fonts */,
 				A3DB4A182BBAAF5B00E88EC5 /* Info.plist */,
 			);
 			path = Resources;
@@ -1082,8 +1148,241 @@
 		A3DB4A1A2BBAAF5C00E88EC5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB4A902BBAB90400E88EC5 /* Rotatable.swift */,
+				A3DB4A932BBAB90400E88EC5 /* Error */,
+				A3DB4A952BBAB90400E88EC5 /* Extensions */,
+				A3DB4A912BBAB90400E88EC5 /* Fonts */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A3DB4A912BBAB90400E88EC5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A922BBAB90400E88EC5 /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A3DB4A932BBAB90400E88EC5 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A942BBAB90400E88EC5 /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		A3DB4A952BBAB90400E88EC5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A962BBAB90400E88EC5 /* UI */,
+				A3DB4AAA2BBAB90400E88EC5 /* UserDefaults */,
+				A3DB4AAC2BBAB90400E88EC5 /* UILabel */,
+				A3DB4AAE2BBAB90400E88EC5 /* UIButton */,
+				A3DB4AB02BBAB90400E88EC5 /* RadioButtonsGroup+Rx */,
+				A3DB4AB32BBAB90400E88EC5 /* Global Functions */,
+				A3DB4AB52BBAB90500E88EC5 /* UITextField+Rx */,
+				A3DB4AB72BBAB90500E88EC5 /* RTL */,
+				A3DB4AB92BBAB90500E88EC5 /* String */,
+				A3DB4ABC2BBAB90500E88EC5 /* Validators */,
+				A3DB4AC52BBAB90500E88EC5 /* NSObject */,
+				A3DB4AC72BBAB90500E88EC5 /* UITextField */,
+				A3DB4AC92BBAB90500E88EC5 /* Reusable */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3DB4A962BBAB90400E88EC5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A972BBAB90400E88EC5 /* UILabel */,
+				A3DB4A992BBAB90400E88EC5 /* UIButton */,
+				A3DB4A9B2BBAB90400E88EC5 /* UIColor */,
+				A3DB4A9D2BBAB90400E88EC5 /* UIView */,
+				A3DB4AA22BBAB90400E88EC5 /* UIFont */,
+				A3DB4AA42BBAB90400E88EC5 /* UIImage+Resize */,
+				A3DB4AA62BBAB90400E88EC5 /* UIViewController */,
+				A3DB4AA82BBAB90400E88EC5 /* UITextField */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A3DB4A972BBAB90400E88EC5 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A982BBAB90400E88EC5 /* UILabel+App.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		A3DB4A992BBAB90400E88EC5 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A9A2BBAB90400E88EC5 /* UIButton+App.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		A3DB4A9B2BBAB90400E88EC5 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A9C2BBAB90400E88EC5 /* UIColor+App.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		A3DB4A9D2BBAB90400E88EC5 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A9E2BBAB90400E88EC5 /* UIView+Constraints.swift */,
+				A3DB4A9F2BBAB90400E88EC5 /* UIView+NIB.swift */,
+				A3DB4AA02BBAB90400E88EC5 /* UIView+KeyboardObserver.swift */,
+				A3DB4AA12BBAB90400E88EC5 /* UIView+ViewController.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A3DB4AA22BBAB90400E88EC5 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AA32BBAB90400E88EC5 /* UIFont+App.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		A3DB4AA42BBAB90400E88EC5 /* UIImage+Resize */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AA52BBAB90400E88EC5 /* UIImage+Resize.swift */,
+			);
+			path = "UIImage+Resize";
+			sourceTree = "<group>";
+		};
+		A3DB4AA62BBAB90400E88EC5 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AA72BBAB90400E88EC5 /* UIViewController+Keyboard.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		A3DB4AA82BBAB90400E88EC5 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AA92BBAB90400E88EC5 /* UITextField+App.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		A3DB4AAA2BBAB90400E88EC5 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AAB2BBAB90400E88EC5 /* UserDefaults+FirstLaunch.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		A3DB4AAC2BBAB90400E88EC5 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AAD2BBAB90400E88EC5 /* UILabel+Style.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		A3DB4AAE2BBAB90400E88EC5 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AAF2BBAB90400E88EC5 /* UIButton+Style.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		A3DB4AB02BBAB90400E88EC5 /* RadioButtonsGroup+Rx */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AB12BBAB90400E88EC5 /* RadioButtonsGroup+Rx.swift */,
+			);
+			path = "RadioButtonsGroup+Rx";
+			sourceTree = "<group>";
+		};
+		A3DB4AB32BBAB90400E88EC5 /* Global Functions */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AB42BBAB90400E88EC5 /* GlobalFunctions.swift */,
+			);
+			path = "Global Functions";
+			sourceTree = "<group>";
+		};
+		A3DB4AB52BBAB90500E88EC5 /* UITextField+Rx */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AB62BBAB90500E88EC5 /* UITextField+Rx.swift */,
+			);
+			path = "UITextField+Rx";
+			sourceTree = "<group>";
+		};
+		A3DB4AB72BBAB90500E88EC5 /* RTL */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AB82BBAB90500E88EC5 /* RTL.swift */,
+			);
+			path = RTL;
+			sourceTree = "<group>";
+		};
+		A3DB4AB92BBAB90500E88EC5 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4ABA2BBAB90500E88EC5 /* String+Mask.swift */,
+				A3DB4ABB2BBAB90500E88EC5 /* String+FormatDate.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		A3DB4ABC2BBAB90500E88EC5 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4ABD2BBAB90500E88EC5 /* Validator.swift */,
+				A3DB4ABE2BBAB90500E88EC5 /* EmptyValidator.swift */,
+				A3DB4ABF2BBAB90500E88EC5 /* CommonValidator.swift */,
+				A3DB4AC02BBAB90500E88EC5 /* LoginValidators.swift */,
+				A3DB4AC12BBAB90500E88EC5 /* AddCardValidator.swift */,
+				A3DB4AC22BBAB90500E88EC5 /* Credit Card Validation */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		A3DB4AC22BBAB90500E88EC5 /* Credit Card Validation */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AC32BBAB90500E88EC5 /* CreditCard.swift */,
+				A3DB4AC42BBAB90500E88EC5 /* CardType.swift */,
+			);
+			path = "Credit Card Validation";
+			sourceTree = "<group>";
+		};
+		A3DB4AC52BBAB90500E88EC5 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AC62BBAB90500E88EC5 /* NSObject+ClassName.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		A3DB4AC72BBAB90500E88EC5 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4AC82BBAB90500E88EC5 /* UITextField+Style.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		A3DB4AC92BBAB90500E88EC5 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4ACA2BBAB90500E88EC5 /* Reusable.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1172,20 +1471,25 @@
 			files = (
 				A3DB4A832BBAAF5D00E88EC5 /* UserInfoService.swift in Sources */,
 				A3DB4A6F2BBAAF5D00E88EC5 /* AppRestBackend.swift in Sources */,
+				A3DB4AE52BBAB90500E88EC5 /* LoginValidators.swift in Sources */,
+				A3DB4ADD2BBAB90500E88EC5 /* GlobalFunctions.swift in Sources */,
 				A3DB4A242BBAAF5C00E88EC5 /* AppSession.swift in Sources */,
 				A3DB4A3E2BBAAF5C00E88EC5 /* InputVerificationCodeViewModel.swift in Sources */,
 				A3DB4A652BBAAF5D00E88EC5 /* ButtonTableViewCell.swift in Sources */,
 				A3DB4A4C2BBAAF5C00E88EC5 /* DropDownViewController.swift in Sources */,
+				A3DB4AD22BBAB90500E88EC5 /* UIView+NIB.swift in Sources */,
 				A3DB4A272BBAAF5C00E88EC5 /* SplashViewModelCompatible.swift in Sources */,
 				A3DB4A482BBAAF5C00E88EC5 /* AlertViewModel.swift in Sources */,
 				A3DB4A512BBAAF5C00E88EC5 /* SettingsViewModelCompatible.swift in Sources */,
 				A3DB4A412BBAAF5C00E88EC5 /* VerifyEmailViewModel.swift in Sources */,
 				A3DB4A692BBAAF5D00E88EC5 /* VerificationCodeViewModel.swift in Sources */,
+				A3DB4AD52BBAB90500E88EC5 /* UIFont+App.swift in Sources */,
 				A3DB4A492BBAAF5C00E88EC5 /* DropDownItemTableViewCell.swift in Sources */,
 				A3DB4A8A2BBAAF5D00E88EC5 /* SceneDelegate.swift in Sources */,
 				A3DB4A442BBAAF5C00E88EC5 /* EmbeddedWebViewViewModelCompatible.swift in Sources */,
 				A3DB4A2F2BBAAF5C00E88EC5 /* SignUpAccountTypeFieldViewModel.swift in Sources */,
 				A3DB4A7D2BBAAF5D00E88EC5 /* UpdateUser.swift in Sources */,
+				A3DB4ACD2BBAB90500E88EC5 /* Error.swift in Sources */,
 				A3DB4A2D2BBAAF5C00E88EC5 /* SignUpStateFieldViewModel.swift in Sources */,
 				A3DB4A472BBAAF5C00E88EC5 /* AlertViewController.swift in Sources */,
 				A3DB4A782BBAAF5D00E88EC5 /* RegisterPushNotificationsToken.swift in Sources */,
@@ -1194,22 +1498,30 @@
 				A3DB4A1B2BBAAF5C00E88EC5 /* Scene.swift in Sources */,
 				A3DB4A7A2BBAAF5D00E88EC5 /* GetUser.swift in Sources */,
 				A3DB4A3F2BBAAF5C00E88EC5 /* VerifyEmailViewController.swift in Sources */,
+				A3DB4AD02BBAB90500E88EC5 /* UIColor+App.swift in Sources */,
 				A3DB4A1D2BBAAF5C00E88EC5 /* SignInFlowCoordinatorable.swift in Sources */,
 				A3DB4A5B2BBAAF5D00E88EC5 /* InputFieldViewModel.swift in Sources */,
 				A3DB4A842BBAAF5D00E88EC5 /* UserInfoServiceable.swift in Sources */,
 				A3DB4A802BBAAF5D00E88EC5 /* SignUpServiceable.swift in Sources */,
+				A3DB4ACB2BBAB90500E88EC5 /* Rotatable.swift in Sources */,
 				A3DB4A592BBAAF5D00E88EC5 /* InputFieldPickerViewModel.swift in Sources */,
 				A3DB4A5D2BBAAF5D00E88EC5 /* InputView.swift in Sources */,
 				A3DB4A452BBAAF5C00E88EC5 /* EmbeddedWebViewViewModel.swift in Sources */,
+				A3DB4AD32BBAB90500E88EC5 /* UIView+KeyboardObserver.swift in Sources */,
+				A3DB4ACF2BBAB90500E88EC5 /* UIButton+App.swift in Sources */,
 				A3DB4A552BBAAF5D00E88EC5 /* MainViewModel.swift in Sources */,
 				A3DB4A892BBAAF5D00E88EC5 /* RESTService+App.swift in Sources */,
 				A3DB4A5A2BBAAF5D00E88EC5 /* InputForm.swift in Sources */,
 				A3DB4A382BBAAF5C00E88EC5 /* SignInFieldType.swift in Sources */,
+				A3DB4AD12BBAB90500E88EC5 /* UIView+Constraints.swift in Sources */,
+				A3DB4ADF2BBAB90500E88EC5 /* RTL.swift in Sources */,
 				A3DB4A2C2BBAAF5C00E88EC5 /* SignUpViewModel.swift in Sources */,
 				A3DB4A7B2BBAAF5D00E88EC5 /* ImageRequest.swift in Sources */,
+				A3DB4AE22BBAB90500E88EC5 /* Validator.swift in Sources */,
 				A3DB4A7E2BBAAF5D00E88EC5 /* VerifyAccountRequest.swift in Sources */,
 				A3DB4A6A2BBAAF5D00E88EC5 /* VerificationCodeDigitTextField.swift in Sources */,
 				A3DB4A822BBAAF5D00E88EC5 /* SignInServiceable.swift in Sources */,
+				A3DB4AEB2BBAB90500E88EC5 /* Reusable.swift in Sources */,
 				A3DB4A372BBAAF5C00E88EC5 /* SignInForm.swift in Sources */,
 				A3DB4A332BBAAF5C00E88EC5 /* ResetPasswordViewController.swift in Sources */,
 				A3DB4A352BBAAF5C00E88EC5 /* ResetPasswordViewModelCompatible.swift in Sources */,
@@ -1219,42 +1531,59 @@
 				A3DB4A812BBAAF5D00E88EC5 /* SignInService.swift in Sources */,
 				A3DB4A6D2BBAAF5D00E88EC5 /* BaseNavigationController.swift in Sources */,
 				A3DB4A432BBAAF5C00E88EC5 /* EmbeddedWebViewViewController.swift in Sources */,
+				A3DB4AE92BBAB90500E88EC5 /* NSObject+ClassName.swift in Sources */,
+				A3DB4ADC2BBAB90500E88EC5 /* RadioButtonsGroup+Rx.swift in Sources */,
 				A3DB4A6E2BBAAF5D00E88EC5 /* AppDelegate.swift in Sources */,
+				A3DB4AEA2BBAB90500E88EC5 /* UITextField+Style.swift in Sources */,
 				A3DB4A2B2BBAAF5C00E88EC5 /* SignUpViewModelCompatible.swift in Sources */,
 				A3DB4A342BBAAF5C00E88EC5 /* ResetPasswordViewModel.swift in Sources */,
+				A3DB4AE32BBAB90500E88EC5 /* EmptyValidator.swift in Sources */,
+				A3DB4ACE2BBAB90500E88EC5 /* UILabel+App.swift in Sources */,
 				A3DB4A662BBAAF5D00E88EC5 /* RadioButton.swift in Sources */,
 				A3DB4A402BBAAF5C00E88EC5 /* VerifyEmailViewModelCompatible.swift in Sources */,
 				A3DB4A532BBAAF5D00E88EC5 /* MainViewController.swift in Sources */,
 				A3DB4A762BBAAF5D00E88EC5 /* SignUpRequest.swift in Sources */,
 				A3DB4A752BBAAF5D00E88EC5 /* Profile.swift in Sources */,
 				A3DB4A3A2BBAAF5C00E88EC5 /* SignInFieldViewModel.swift in Sources */,
+				A3DB4AE02BBAB90500E88EC5 /* String+Mask.swift in Sources */,
+				A3DB4AD72BBAB90500E88EC5 /* UIViewController+Keyboard.swift in Sources */,
 				A3DB4A262BBAAF5C00E88EC5 /* SplashViewModel.swift in Sources */,
+				A3DB4AE72BBAB90500E88EC5 /* CreditCard.swift in Sources */,
+				A3DB4AE62BBAB90500E88EC5 /* AddCardValidator.swift in Sources */,
 				A3DB4A302BBAAF5C00E88EC5 /* SignUpFieldViewModel.swift in Sources */,
+				A3DB4ADA2BBAB90500E88EC5 /* UILabel+Style.swift in Sources */,
 				A3DB4A6C2BBAAF5D00E88EC5 /* BaseTabBarViewController.swift in Sources */,
 				A3DB4A792BBAAF5D00E88EC5 /* UnregisterPushNotificationsToken.swift in Sources */,
 				A3DB4A542BBAAF5D00E88EC5 /* MainViewModelCompatible.swift in Sources */,
 				A3DB4A222BBAAF5C00E88EC5 /* MainFlowCoordinatable.swift in Sources */,
+				A3DB4AE82BBAB90500E88EC5 /* CardType.swift in Sources */,
 				A3DB4A4F2BBAAF5C00E88EC5 /* SettingsViewController.swift in Sources */,
+				A3DB4ADB2BBAB90500E88EC5 /* UIButton+Style.swift in Sources */,
 				A3DB4A742BBAAF5D00E88EC5 /* Tokens.swift in Sources */,
 				A3DB4A7C2BBAAF5D00E88EC5 /* SignInRequest.swift in Sources */,
+				A3DB4AE12BBAB90500E88EC5 /* String+FormatDate.swift in Sources */,
 				A3DB4A1E2BBAAF5C00E88EC5 /* SignInFlowCoordinator.swift in Sources */,
 				A3DB4A772BBAAF5D00E88EC5 /* ResetPasswordRequest.swift in Sources */,
+				A3DB4AD82BBAB90500E88EC5 /* UITextField+App.swift in Sources */,
 				A3DB4A672BBAAF5D00E88EC5 /* VerificationCodeView.swift in Sources */,
 				A3DB4A7F2BBAAF5D00E88EC5 /* SignUpService.swift in Sources */,
 				A3DB4A202BBAAF5C00E88EC5 /* SceneCoordinator.swift in Sources */,
 				A3DB4A212BBAAF5C00E88EC5 /* MainFlowCoordinator.swift in Sources */,
 				A3DB4A6B2BBAAF5D00E88EC5 /* ProgressHUD.swift in Sources */,
 				A3DB4A232BBAAF5C00E88EC5 /* Authorization.swift in Sources */,
+				A3DB4ADE2BBAB90500E88EC5 /* UITextField+Rx.swift in Sources */,
 				A3DB4A502BBAAF5C00E88EC5 /* SettingsViewModel.swift in Sources */,
 				A3DB4A702BBAAF5D00E88EC5 /* RegisterPushNotificationsTokenResponse.swift in Sources */,
 				A3DB4A2A2BBAAF5C00E88EC5 /* SignUpViewController.swift in Sources */,
 				A3DB4A1F2BBAAF5C00E88EC5 /* SceneCoordinatorable.swift in Sources */,
+				A3DB4AD92BBAB90500E88EC5 /* UserDefaults+FirstLaunch.swift in Sources */,
 				A3DB4A582BBAAF5D00E88EC5 /* InputFieldRadioButtonViewModel.swift in Sources */,
 				A3DB4A562BBAAF5D00E88EC5 /* RadioButtonsGroup.swift in Sources */,
 				A3DB4A1C2BBAAF5C00E88EC5 /* SceneTransition.swift in Sources */,
 				A3DB4A252BBAAF5C00E88EC5 /* SplashViewController.swift in Sources */,
 				A3DB4A722BBAAF5D00E88EC5 /* Response.swift in Sources */,
 				A3DB4A3C2BBAAF5C00E88EC5 /* SignInViewModel.swift in Sources */,
+				A3DB4AD42BBAB90500E88EC5 /* UIView+ViewController.swift in Sources */,
 				A3DB4A392BBAAF5C00E88EC5 /* SignInViewController.swift in Sources */,
 				A3DB4A632BBAAF5D00E88EC5 /* TextInputTableViewCell.swift in Sources */,
 				A3DB4A362BBAAF5C00E88EC5 /* ResetPasswordFieldViewModel.swift in Sources */,
@@ -1263,6 +1592,7 @@
 				A3DB4A422BBAAF5C00E88EC5 /* VerifyEmailToChangePasswordViewModel.swift in Sources */,
 				A3DB4A322BBAAF5C00E88EC5 /* ResetPasswordForm.swift in Sources */,
 				A3DB4A872BBAAF5D00E88EC5 /* Encodable+Dictionary.swift in Sources */,
+				A3DB4ACC2BBAB90500E88EC5 /* Fonts.swift in Sources */,
 				A3DB4A282BBAAF5C00E88EC5 /* SignUpForm.swift in Sources */,
 				A3DB4A572BBAAF5D00E88EC5 /* InputFieldConfirmPasswordViewModel.swift in Sources */,
 				A3DB4A292BBAAF5C00E88EC5 /* SignUpFieldType.swift in Sources */,
@@ -1271,6 +1601,8 @@
 				A3DB4A862BBAAF5D00E88EC5 /* Encodable+Serialization.swift in Sources */,
 				A3DB4A312BBAAF5C00E88EC5 /* ResetPasswordFieldType.swift in Sources */,
 				A3DB4A712BBAAF5D00E88EC5 /* UnregisterPushNotificationsTokenResponse.swift in Sources */,
+				A3DB4AD62BBAB90500E88EC5 /* UIImage+Resize.swift in Sources */,
+				A3DB4AE42BBAB90500E88EC5 /* CommonValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

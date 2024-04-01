@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DropDownItemTableViewCell" customModule="EightTwenty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRc-NN-bfn">
+                        <rect key="frame" x="20" y="15" width="280" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnM-Qh-F53">
+                        <rect key="frame" x="20" y="42" width="280" height="2"/>
+                        <color key="backgroundColor" name="ETW-Cloud300"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="U7F-CC-03P"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RdO-AE-CGT">
+                        <rect key="frame" x="280" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="bYb-pp-Lrw"/>
+                            <constraint firstAttribute="height" constant="20" id="wKe-dh-Tun"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RdO-AE-CGT" firstAttribute="centerY" secondItem="gRc-NN-bfn" secondAttribute="centerY" id="8VB-DX-Bl9"/>
+                    <constraint firstAttribute="bottom" secondItem="gRc-NN-bfn" secondAttribute="bottom" constant="15" id="B9O-kw-Vay"/>
+                    <constraint firstItem="MnM-Qh-F53" firstAttribute="leading" secondItem="gRc-NN-bfn" secondAttribute="leading" id="Gas-i3-kjJ"/>
+                    <constraint firstAttribute="bottom" secondItem="MnM-Qh-F53" secondAttribute="bottom" id="c3N-xw-pIO"/>
+                    <constraint firstItem="MnM-Qh-F53" firstAttribute="trailing" secondItem="gRc-NN-bfn" secondAttribute="trailing" id="dfl-Vd-PK1"/>
+                    <constraint firstItem="gRc-NN-bfn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="j4A-To-JxE"/>
+                    <constraint firstAttribute="trailing" secondItem="RdO-AE-CGT" secondAttribute="trailing" constant="20" id="tIM-9j-IKu"/>
+                    <constraint firstItem="gRc-NN-bfn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="xKg-9d-cQX"/>
+                    <constraint firstAttribute="trailing" secondItem="gRc-NN-bfn" secondAttribute="trailing" constant="20" id="y63-Hw-Aie"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="indicatorImageView" destination="RdO-AE-CGT" id="TlK-dK-QBH"/>
+                <outlet property="nameLabel" destination="gRc-NN-bfn" id="WFP-Dc-ejQ"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="147"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ETW-Cloud300">
+            <color red="0.2669999897480011" green="0.2669999897480011" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
