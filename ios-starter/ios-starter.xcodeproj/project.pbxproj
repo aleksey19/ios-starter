@@ -7,23 +7,244 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3DB493B2BBAAE6100E88EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB493A2BBAAE6100E88EC5 /* AppDelegate.swift */; };
-		A3DB493D2BBAAE6100E88EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB493C2BBAAE6100E88EC5 /* SceneDelegate.swift */; };
-		A3DB493F2BBAAE6100E88EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB493E2BBAAE6100E88EC5 /* ViewController.swift */; };
-		A3DB49422BBAAE6100E88EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49402BBAAE6100E88EC5 /* Main.storyboard */; };
-		A3DB49442BBAAE6300E88EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49432BBAAE6300E88EC5 /* Assets.xcassets */; };
-		A3DB49472BBAAE6300E88EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49452BBAAE6300E88EC5 /* LaunchScreen.storyboard */; };
+		A3DB4A1B2BBAAF5C00E88EC5 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49502BBAAF5B00E88EC5 /* Scene.swift */; };
+		A3DB4A1C2BBAAF5C00E88EC5 /* SceneTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49512BBAAF5B00E88EC5 /* SceneTransition.swift */; };
+		A3DB4A1D2BBAAF5C00E88EC5 /* SignInFlowCoordinatorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49532BBAAF5B00E88EC5 /* SignInFlowCoordinatorable.swift */; };
+		A3DB4A1E2BBAAF5C00E88EC5 /* SignInFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49542BBAAF5B00E88EC5 /* SignInFlowCoordinator.swift */; };
+		A3DB4A1F2BBAAF5C00E88EC5 /* SceneCoordinatorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49552BBAAF5B00E88EC5 /* SceneCoordinatorable.swift */; };
+		A3DB4A202BBAAF5C00E88EC5 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49562BBAAF5B00E88EC5 /* SceneCoordinator.swift */; };
+		A3DB4A212BBAAF5C00E88EC5 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49582BBAAF5B00E88EC5 /* MainFlowCoordinator.swift */; };
+		A3DB4A222BBAAF5C00E88EC5 /* MainFlowCoordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49592BBAAF5B00E88EC5 /* MainFlowCoordinatable.swift */; };
+		A3DB4A232BBAAF5C00E88EC5 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB495B2BBAAF5B00E88EC5 /* Authorization.swift */; };
+		A3DB4A242BBAAF5C00E88EC5 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB495C2BBAAF5B00E88EC5 /* AppSession.swift */; };
+		A3DB4A252BBAAF5C00E88EC5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49612BBAAF5B00E88EC5 /* SplashViewController.swift */; };
+		A3DB4A262BBAAF5C00E88EC5 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49632BBAAF5B00E88EC5 /* SplashViewModel.swift */; };
+		A3DB4A272BBAAF5C00E88EC5 /* SplashViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49642BBAAF5B00E88EC5 /* SplashViewModelCompatible.swift */; };
+		A3DB4A282BBAAF5C00E88EC5 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49672BBAAF5B00E88EC5 /* SignUpForm.swift */; };
+		A3DB4A292BBAAF5C00E88EC5 /* SignUpFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49682BBAAF5B00E88EC5 /* SignUpFieldType.swift */; };
+		A3DB4A2A2BBAAF5C00E88EC5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB496A2BBAAF5B00E88EC5 /* SignUpViewController.swift */; };
+		A3DB4A2B2BBAAF5C00E88EC5 /* SignUpViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB496C2BBAAF5B00E88EC5 /* SignUpViewModelCompatible.swift */; };
+		A3DB4A2C2BBAAF5C00E88EC5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB496D2BBAAF5B00E88EC5 /* SignUpViewModel.swift */; };
+		A3DB4A2D2BBAAF5C00E88EC5 /* SignUpStateFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB496E2BBAAF5B00E88EC5 /* SignUpStateFieldViewModel.swift */; };
+		A3DB4A2E2BBAAF5C00E88EC5 /* StateAndZipSignUpFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB496F2BBAAF5B00E88EC5 /* StateAndZipSignUpFieldViewModel.swift */; };
+		A3DB4A2F2BBAAF5C00E88EC5 /* SignUpAccountTypeFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49702BBAAF5B00E88EC5 /* SignUpAccountTypeFieldViewModel.swift */; };
+		A3DB4A302BBAAF5C00E88EC5 /* SignUpFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49712BBAAF5B00E88EC5 /* SignUpFieldViewModel.swift */; };
+		A3DB4A312BBAAF5C00E88EC5 /* ResetPasswordFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49742BBAAF5B00E88EC5 /* ResetPasswordFieldType.swift */; };
+		A3DB4A322BBAAF5C00E88EC5 /* ResetPasswordForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49752BBAAF5B00E88EC5 /* ResetPasswordForm.swift */; };
+		A3DB4A332BBAAF5C00E88EC5 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49772BBAAF5B00E88EC5 /* ResetPasswordViewController.swift */; };
+		A3DB4A342BBAAF5C00E88EC5 /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49792BBAAF5B00E88EC5 /* ResetPasswordViewModel.swift */; };
+		A3DB4A352BBAAF5C00E88EC5 /* ResetPasswordViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB497A2BBAAF5B00E88EC5 /* ResetPasswordViewModelCompatible.swift */; };
+		A3DB4A362BBAAF5C00E88EC5 /* ResetPasswordFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB497B2BBAAF5B00E88EC5 /* ResetPasswordFieldViewModel.swift */; };
+		A3DB4A372BBAAF5C00E88EC5 /* SignInForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB497E2BBAAF5B00E88EC5 /* SignInForm.swift */; };
+		A3DB4A382BBAAF5C00E88EC5 /* SignInFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB497F2BBAAF5B00E88EC5 /* SignInFieldType.swift */; };
+		A3DB4A392BBAAF5C00E88EC5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49812BBAAF5B00E88EC5 /* SignInViewController.swift */; };
+		A3DB4A3A2BBAAF5C00E88EC5 /* SignInFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49832BBAAF5B00E88EC5 /* SignInFieldViewModel.swift */; };
+		A3DB4A3B2BBAAF5C00E88EC5 /* SignInViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49842BBAAF5B00E88EC5 /* SignInViewModelCompatible.swift */; };
+		A3DB4A3C2BBAAF5C00E88EC5 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49852BBAAF5B00E88EC5 /* SignInViewModel.swift */; };
+		A3DB4A3D2BBAAF5C00E88EC5 /* InputVerificationCodeViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49882BBAAF5B00E88EC5 /* InputVerificationCodeViewModelCompatible.swift */; };
+		A3DB4A3E2BBAAF5C00E88EC5 /* InputVerificationCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49892BBAAF5B00E88EC5 /* InputVerificationCodeViewModel.swift */; };
+		A3DB4A3F2BBAAF5C00E88EC5 /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB498C2BBAAF5B00E88EC5 /* VerifyEmailViewController.swift */; };
+		A3DB4A402BBAAF5C00E88EC5 /* VerifyEmailViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB498E2BBAAF5B00E88EC5 /* VerifyEmailViewModelCompatible.swift */; };
+		A3DB4A412BBAAF5C00E88EC5 /* VerifyEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB498F2BBAAF5B00E88EC5 /* VerifyEmailViewModel.swift */; };
+		A3DB4A422BBAAF5C00E88EC5 /* VerifyEmailToChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49922BBAAF5B00E88EC5 /* VerifyEmailToChangePasswordViewModel.swift */; };
+		A3DB4A432BBAAF5C00E88EC5 /* EmbeddedWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49962BBAAF5B00E88EC5 /* EmbeddedWebViewViewController.swift */; };
+		A3DB4A442BBAAF5C00E88EC5 /* EmbeddedWebViewViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49982BBAAF5B00E88EC5 /* EmbeddedWebViewViewModelCompatible.swift */; };
+		A3DB4A452BBAAF5C00E88EC5 /* EmbeddedWebViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49992BBAAF5B00E88EC5 /* EmbeddedWebViewViewModel.swift */; };
+		A3DB4A462BBAAF5C00E88EC5 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB499C2BBAAF5B00E88EC5 /* AlertViewController.xib */; };
+		A3DB4A472BBAAF5C00E88EC5 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB499D2BBAAF5B00E88EC5 /* AlertViewController.swift */; };
+		A3DB4A482BBAAF5C00E88EC5 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB499F2BBAAF5B00E88EC5 /* AlertViewModel.swift */; };
+		A3DB4A492BBAAF5C00E88EC5 /* DropDownItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49A22BBAAF5B00E88EC5 /* DropDownItemTableViewCell.swift */; };
+		A3DB4A4A2BBAAF5C00E88EC5 /* DropDownItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49A32BBAAF5B00E88EC5 /* DropDownItemTableViewCell.xib */; };
+		A3DB4A4B2BBAAF5C00E88EC5 /* DropDownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49A52BBAAF5B00E88EC5 /* DropDownViewController.xib */; };
+		A3DB4A4C2BBAAF5C00E88EC5 /* DropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49A62BBAAF5B00E88EC5 /* DropDownViewController.swift */; };
+		A3DB4A4D2BBAAF5C00E88EC5 /* DropDownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49A82BBAAF5B00E88EC5 /* DropDownViewModel.swift */; };
+		A3DB4A4E2BBAAF5C00E88EC5 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49AC2BBAAF5B00E88EC5 /* SettingsViewController.xib */; };
+		A3DB4A4F2BBAAF5C00E88EC5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49AD2BBAAF5B00E88EC5 /* SettingsViewController.swift */; };
+		A3DB4A502BBAAF5C00E88EC5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49AF2BBAAF5B00E88EC5 /* SettingsViewModel.swift */; };
+		A3DB4A512BBAAF5C00E88EC5 /* SettingsViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49B02BBAAF5B00E88EC5 /* SettingsViewModelCompatible.swift */; };
+		A3DB4A522BBAAF5D00E88EC5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49B32BBAAF5B00E88EC5 /* MainViewController.xib */; };
+		A3DB4A532BBAAF5D00E88EC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49B42BBAAF5B00E88EC5 /* MainViewController.swift */; };
+		A3DB4A542BBAAF5D00E88EC5 /* MainViewModelCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49B62BBAAF5B00E88EC5 /* MainViewModelCompatible.swift */; };
+		A3DB4A552BBAAF5D00E88EC5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49B72BBAAF5B00E88EC5 /* MainViewModel.swift */; };
+		A3DB4A562BBAAF5D00E88EC5 /* RadioButtonsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49BB2BBAAF5B00E88EC5 /* RadioButtonsGroup.swift */; };
+		A3DB4A572BBAAF5D00E88EC5 /* InputFieldConfirmPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49BD2BBAAF5B00E88EC5 /* InputFieldConfirmPasswordViewModel.swift */; };
+		A3DB4A582BBAAF5D00E88EC5 /* InputFieldRadioButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49BE2BBAAF5B00E88EC5 /* InputFieldRadioButtonViewModel.swift */; };
+		A3DB4A592BBAAF5D00E88EC5 /* InputFieldPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49BF2BBAAF5B00E88EC5 /* InputFieldPickerViewModel.swift */; };
+		A3DB4A5A2BBAAF5D00E88EC5 /* InputForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49C02BBAAF5B00E88EC5 /* InputForm.swift */; };
+		A3DB4A5B2BBAAF5D00E88EC5 /* InputFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49C12BBAAF5B00E88EC5 /* InputFieldViewModel.swift */; };
+		A3DB4A5C2BBAAF5D00E88EC5 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C32BBAAF5B00E88EC5 /* InputView.xib */; };
+		A3DB4A5D2BBAAF5D00E88EC5 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49C42BBAAF5B00E88EC5 /* InputView.swift */; };
+		A3DB4A5E2BBAAF5D00E88EC5 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C62BBAAF5B00E88EC5 /* ButtonTableViewCell.xib */; };
+		A3DB4A5F2BBAAF5D00E88EC5 /* StateAndZipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C72BBAAF5B00E88EC5 /* StateAndZipTableViewCell.xib */; };
+		A3DB4A602BBAAF5D00E88EC5 /* TextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C82BBAAF5B00E88EC5 /* TextInputTableViewCell.xib */; };
+		A3DB4A612BBAAF5D00E88EC5 /* StateAndZipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49C92BBAAF5B00E88EC5 /* StateAndZipTableViewCell.swift */; };
+		A3DB4A622BBAAF5D00E88EC5 /* RadioButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49CA2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.xib */; };
+		A3DB4A632BBAAF5D00E88EC5 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49CB2BBAAF5B00E88EC5 /* TextInputTableViewCell.swift */; };
+		A3DB4A642BBAAF5D00E88EC5 /* RadioButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49CC2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.swift */; };
+		A3DB4A652BBAAF5D00E88EC5 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49CD2BBAAF5B00E88EC5 /* ButtonTableViewCell.swift */; };
+		A3DB4A662BBAAF5D00E88EC5 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49CF2BBAAF5B00E88EC5 /* RadioButton.swift */; };
+		A3DB4A672BBAAF5D00E88EC5 /* VerificationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49D12BBAAF5B00E88EC5 /* VerificationCodeView.swift */; };
+		A3DB4A682BBAAF5D00E88EC5 /* VerificationCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49D22BBAAF5B00E88EC5 /* VerificationCodeView.xib */; };
+		A3DB4A692BBAAF5D00E88EC5 /* VerificationCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49D32BBAAF5B00E88EC5 /* VerificationCodeViewModel.swift */; };
+		A3DB4A6A2BBAAF5D00E88EC5 /* VerificationCodeDigitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49D52BBAAF5B00E88EC5 /* VerificationCodeDigitTextField.swift */; };
+		A3DB4A6B2BBAAF5D00E88EC5 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49D72BBAAF5B00E88EC5 /* ProgressHUD.swift */; };
+		A3DB4A6C2BBAAF5D00E88EC5 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49D92BBAAF5B00E88EC5 /* BaseTabBarViewController.swift */; };
+		A3DB4A6D2BBAAF5D00E88EC5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49DB2BBAAF5B00E88EC5 /* BaseNavigationController.swift */; };
+		A3DB4A6E2BBAAF5D00E88EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49DC2BBAAF5B00E88EC5 /* AppDelegate.swift */; };
+		A3DB4A6F2BBAAF5D00E88EC5 /* AppRestBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49E12BBAAF5B00E88EC5 /* AppRestBackend.swift */; };
+		A3DB4A702BBAAF5D00E88EC5 /* RegisterPushNotificationsTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49E42BBAAF5B00E88EC5 /* RegisterPushNotificationsTokenResponse.swift */; };
+		A3DB4A712BBAAF5D00E88EC5 /* UnregisterPushNotificationsTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49E52BBAAF5B00E88EC5 /* UnregisterPushNotificationsTokenResponse.swift */; };
+		A3DB4A722BBAAF5D00E88EC5 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49E62BBAAF5B00E88EC5 /* Response.swift */; };
+		A3DB4A732BBAAF5D00E88EC5 /* TokensResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49E82BBAAF5B00E88EC5 /* TokensResponse.swift */; };
+		A3DB4A742BBAAF5D00E88EC5 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49EA2BBAAF5B00E88EC5 /* Tokens.swift */; };
+		A3DB4A752BBAAF5D00E88EC5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49EB2BBAAF5B00E88EC5 /* Profile.swift */; };
+		A3DB4A762BBAAF5D00E88EC5 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49EE2BBAAF5B00E88EC5 /* SignUpRequest.swift */; };
+		A3DB4A772BBAAF5D00E88EC5 /* ResetPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49F02BBAAF5B00E88EC5 /* ResetPasswordRequest.swift */; };
+		A3DB4A782BBAAF5D00E88EC5 /* RegisterPushNotificationsToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49F22BBAAF5B00E88EC5 /* RegisterPushNotificationsToken.swift */; };
+		A3DB4A792BBAAF5D00E88EC5 /* UnregisterPushNotificationsToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49F32BBAAF5B00E88EC5 /* UnregisterPushNotificationsToken.swift */; };
+		A3DB4A7A2BBAAF5D00E88EC5 /* GetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49F52BBAAF5B00E88EC5 /* GetUser.swift */; };
+		A3DB4A7B2BBAAF5D00E88EC5 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49F72BBAAF5B00E88EC5 /* ImageRequest.swift */; };
+		A3DB4A7C2BBAAF5D00E88EC5 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49F92BBAAF5B00E88EC5 /* SignInRequest.swift */; };
+		A3DB4A7D2BBAAF5D00E88EC5 /* UpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49FB2BBAAF5B00E88EC5 /* UpdateUser.swift */; };
+		A3DB4A7E2BBAAF5D00E88EC5 /* VerifyAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49FD2BBAAF5B00E88EC5 /* VerifyAccountRequest.swift */; };
+		A3DB4A7F2BBAAF5D00E88EC5 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A002BBAAF5B00E88EC5 /* SignUpService.swift */; };
+		A3DB4A802BBAAF5D00E88EC5 /* SignUpServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A012BBAAF5B00E88EC5 /* SignUpServiceable.swift */; };
+		A3DB4A812BBAAF5D00E88EC5 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A032BBAAF5B00E88EC5 /* SignInService.swift */; };
+		A3DB4A822BBAAF5D00E88EC5 /* SignInServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A042BBAAF5B00E88EC5 /* SignInServiceable.swift */; };
+		A3DB4A832BBAAF5D00E88EC5 /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A062BBAAF5B00E88EC5 /* UserInfoService.swift */; };
+		A3DB4A842BBAAF5D00E88EC5 /* UserInfoServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A072BBAAF5B00E88EC5 /* UserInfoServiceable.swift */; };
+		A3DB4A852BBAAF5D00E88EC5 /* Encodable+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0A2BBAAF5B00E88EC5 /* Encodable+Parse.swift */; };
+		A3DB4A862BBAAF5D00E88EC5 /* Encodable+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0B2BBAAF5B00E88EC5 /* Encodable+Serialization.swift */; };
+		A3DB4A872BBAAF5D00E88EC5 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0C2BBAAF5B00E88EC5 /* Encodable+Dictionary.swift */; };
+		A3DB4A882BBAAF5D00E88EC5 /* RESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0D2BBAAF5B00E88EC5 /* RESTService.swift */; };
+		A3DB4A892BBAAF5D00E88EC5 /* RESTService+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0E2BBAAF5B00E88EC5 /* RESTService+App.swift */; };
+		A3DB4A8A2BBAAF5D00E88EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0F2BBAAF5B00E88EC5 /* SceneDelegate.swift */; };
+		A3DB4A8B2BBAAF5D00E88EC5 /* spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A112BBAAF5B00E88EC5 /* spinner.json */; };
+		A3DB4A8C2BBAAF5D00E88EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A122BBAAF5B00E88EC5 /* Assets.xcassets */; };
+		A3DB4A8D2BBAAF5D00E88EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A132BBAAF5B00E88EC5 /* LaunchScreen.storyboard */; };
+		A3DB4A8E2BBAAF5D00E88EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A152BBAAF5B00E88EC5 /* Main.storyboard */; };
+		A3DB4A8F2BBAAF5D00E88EC5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A182BBAAF5B00E88EC5 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3DB49372BBAAE6100E88EC5 /* ios-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3DB493A2BBAAE6100E88EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3DB493C2BBAAE6100E88EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3DB493E2BBAAE6100E88EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A3DB49412BBAAE6100E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3DB49432BBAAE6300E88EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A3DB49462BBAAE6300E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A3DB49482BBAAE6300E88EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DB49502BBAAF5B00E88EC5 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		A3DB49512BBAAF5B00E88EC5 /* SceneTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTransition.swift; sourceTree = "<group>"; };
+		A3DB49532BBAAF5B00E88EC5 /* SignInFlowCoordinatorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFlowCoordinatorable.swift; sourceTree = "<group>"; };
+		A3DB49542BBAAF5B00E88EC5 /* SignInFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFlowCoordinator.swift; sourceTree = "<group>"; };
+		A3DB49552BBAAF5B00E88EC5 /* SceneCoordinatorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorable.swift; sourceTree = "<group>"; };
+		A3DB49562BBAAF5B00E88EC5 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		A3DB49582BBAAF5B00E88EC5 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		A3DB49592BBAAF5B00E88EC5 /* MainFlowCoordinatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinatable.swift; sourceTree = "<group>"; };
+		A3DB495B2BBAAF5B00E88EC5 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		A3DB495C2BBAAF5B00E88EC5 /* AppSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
+		A3DB49612BBAAF5B00E88EC5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A3DB49632BBAAF5B00E88EC5 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		A3DB49642BBAAF5B00E88EC5 /* SplashViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB49672BBAAF5B00E88EC5 /* SignUpForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
+		A3DB49682BBAAF5B00E88EC5 /* SignUpFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFieldType.swift; sourceTree = "<group>"; };
+		A3DB496A2BBAAF5B00E88EC5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A3DB496C2BBAAF5B00E88EC5 /* SignUpViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB496D2BBAAF5B00E88EC5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		A3DB496E2BBAAF5B00E88EC5 /* SignUpStateFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStateFieldViewModel.swift; sourceTree = "<group>"; };
+		A3DB496F2BBAAF5B00E88EC5 /* StateAndZipSignUpFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateAndZipSignUpFieldViewModel.swift; sourceTree = "<group>"; };
+		A3DB49702BBAAF5B00E88EC5 /* SignUpAccountTypeFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAccountTypeFieldViewModel.swift; sourceTree = "<group>"; };
+		A3DB49712BBAAF5B00E88EC5 /* SignUpFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFieldViewModel.swift; sourceTree = "<group>"; };
+		A3DB49742BBAAF5B00E88EC5 /* ResetPasswordFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordFieldType.swift; sourceTree = "<group>"; };
+		A3DB49752BBAAF5B00E88EC5 /* ResetPasswordForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordForm.swift; sourceTree = "<group>"; };
+		A3DB49772BBAAF5B00E88EC5 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		A3DB49792BBAAF5B00E88EC5 /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
+		A3DB497A2BBAAF5B00E88EC5 /* ResetPasswordViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB497B2BBAAF5B00E88EC5 /* ResetPasswordFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordFieldViewModel.swift; sourceTree = "<group>"; };
+		A3DB497E2BBAAF5B00E88EC5 /* SignInForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInForm.swift; sourceTree = "<group>"; };
+		A3DB497F2BBAAF5B00E88EC5 /* SignInFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFieldType.swift; sourceTree = "<group>"; };
+		A3DB49812BBAAF5B00E88EC5 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A3DB49832BBAAF5B00E88EC5 /* SignInFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFieldViewModel.swift; sourceTree = "<group>"; };
+		A3DB49842BBAAF5B00E88EC5 /* SignInViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB49852BBAAF5B00E88EC5 /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		A3DB49882BBAAF5B00E88EC5 /* InputVerificationCodeViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputVerificationCodeViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB49892BBAAF5B00E88EC5 /* InputVerificationCodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputVerificationCodeViewModel.swift; sourceTree = "<group>"; };
+		A3DB498C2BBAAF5B00E88EC5 /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
+		A3DB498E2BBAAF5B00E88EC5 /* VerifyEmailViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB498F2BBAAF5B00E88EC5 /* VerifyEmailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewModel.swift; sourceTree = "<group>"; };
+		A3DB49922BBAAF5B00E88EC5 /* VerifyEmailToChangePasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailToChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		A3DB49962BBAAF5B00E88EC5 /* EmbeddedWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedWebViewViewController.swift; sourceTree = "<group>"; };
+		A3DB49982BBAAF5B00E88EC5 /* EmbeddedWebViewViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedWebViewViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB49992BBAAF5B00E88EC5 /* EmbeddedWebViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedWebViewViewModel.swift; sourceTree = "<group>"; };
+		A3DB499C2BBAAF5B00E88EC5 /* AlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		A3DB499D2BBAAF5B00E88EC5 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		A3DB499F2BBAAF5B00E88EC5 /* AlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		A3DB49A22BBAAF5B00E88EC5 /* DropDownItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownItemTableViewCell.swift; sourceTree = "<group>"; };
+		A3DB49A32BBAAF5B00E88EC5 /* DropDownItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownItemTableViewCell.xib; sourceTree = "<group>"; };
+		A3DB49A52BBAAF5B00E88EC5 /* DropDownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownViewController.xib; sourceTree = "<group>"; };
+		A3DB49A62BBAAF5B00E88EC5 /* DropDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownViewController.swift; sourceTree = "<group>"; };
+		A3DB49A82BBAAF5B00E88EC5 /* DropDownViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownViewModel.swift; sourceTree = "<group>"; };
+		A3DB49AC2BBAAF5B00E88EC5 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		A3DB49AD2BBAAF5B00E88EC5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A3DB49AF2BBAAF5B00E88EC5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A3DB49B02BBAAF5B00E88EC5 /* SettingsViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB49B32BBAAF5B00E88EC5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A3DB49B42BBAAF5B00E88EC5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A3DB49B62BBAAF5B00E88EC5 /* MainViewModelCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModelCompatible.swift; sourceTree = "<group>"; };
+		A3DB49B72BBAAF5B00E88EC5 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A3DB49BB2BBAAF5B00E88EC5 /* RadioButtonsGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonsGroup.swift; sourceTree = "<group>"; };
+		A3DB49BD2BBAAF5B00E88EC5 /* InputFieldConfirmPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldConfirmPasswordViewModel.swift; sourceTree = "<group>"; };
+		A3DB49BE2BBAAF5B00E88EC5 /* InputFieldRadioButtonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldRadioButtonViewModel.swift; sourceTree = "<group>"; };
+		A3DB49BF2BBAAF5B00E88EC5 /* InputFieldPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldPickerViewModel.swift; sourceTree = "<group>"; };
+		A3DB49C02BBAAF5B00E88EC5 /* InputForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputForm.swift; sourceTree = "<group>"; };
+		A3DB49C12BBAAF5B00E88EC5 /* InputFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldViewModel.swift; sourceTree = "<group>"; };
+		A3DB49C32BBAAF5B00E88EC5 /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		A3DB49C42BBAAF5B00E88EC5 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		A3DB49C62BBAAF5B00E88EC5 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		A3DB49C72BBAAF5B00E88EC5 /* StateAndZipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StateAndZipTableViewCell.xib; sourceTree = "<group>"; };
+		A3DB49C82BBAAF5B00E88EC5 /* TextInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputTableViewCell.xib; sourceTree = "<group>"; };
+		A3DB49C92BBAAF5B00E88EC5 /* StateAndZipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateAndZipTableViewCell.swift; sourceTree = "<group>"; };
+		A3DB49CA2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioButtonsTableViewCell.xib; sourceTree = "<group>"; };
+		A3DB49CB2BBAAF5B00E88EC5 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
+		A3DB49CC2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonsTableViewCell.swift; sourceTree = "<group>"; };
+		A3DB49CD2BBAAF5B00E88EC5 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		A3DB49CF2BBAAF5B00E88EC5 /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		A3DB49D12BBAAF5B00E88EC5 /* VerificationCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeView.swift; sourceTree = "<group>"; };
+		A3DB49D22BBAAF5B00E88EC5 /* VerificationCodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerificationCodeView.xib; sourceTree = "<group>"; };
+		A3DB49D32BBAAF5B00E88EC5 /* VerificationCodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeViewModel.swift; sourceTree = "<group>"; };
+		A3DB49D52BBAAF5B00E88EC5 /* VerificationCodeDigitTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeDigitTextField.swift; sourceTree = "<group>"; };
+		A3DB49D72BBAAF5B00E88EC5 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		A3DB49D92BBAAF5B00E88EC5 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		A3DB49DB2BBAAF5B00E88EC5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		A3DB49DC2BBAAF5B00E88EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3DB49E12BBAAF5B00E88EC5 /* AppRestBackend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRestBackend.swift; sourceTree = "<group>"; };
+		A3DB49E42BBAAF5B00E88EC5 /* RegisterPushNotificationsTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPushNotificationsTokenResponse.swift; sourceTree = "<group>"; };
+		A3DB49E52BBAAF5B00E88EC5 /* UnregisterPushNotificationsTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregisterPushNotificationsTokenResponse.swift; sourceTree = "<group>"; };
+		A3DB49E62BBAAF5B00E88EC5 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		A3DB49E82BBAAF5B00E88EC5 /* TokensResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensResponse.swift; sourceTree = "<group>"; };
+		A3DB49EA2BBAAF5B00E88EC5 /* Tokens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		A3DB49EB2BBAAF5B00E88EC5 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		A3DB49EE2BBAAF5B00E88EC5 /* SignUpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		A3DB49F02BBAAF5B00E88EC5 /* ResetPasswordRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordRequest.swift; sourceTree = "<group>"; };
+		A3DB49F22BBAAF5B00E88EC5 /* RegisterPushNotificationsToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPushNotificationsToken.swift; sourceTree = "<group>"; };
+		A3DB49F32BBAAF5B00E88EC5 /* UnregisterPushNotificationsToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregisterPushNotificationsToken.swift; sourceTree = "<group>"; };
+		A3DB49F52BBAAF5B00E88EC5 /* GetUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUser.swift; sourceTree = "<group>"; };
+		A3DB49F72BBAAF5B00E88EC5 /* ImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		A3DB49F92BBAAF5B00E88EC5 /* SignInRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		A3DB49FB2BBAAF5B00E88EC5 /* UpdateUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUser.swift; sourceTree = "<group>"; };
+		A3DB49FD2BBAAF5B00E88EC5 /* VerifyAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyAccountRequest.swift; sourceTree = "<group>"; };
+		A3DB4A002BBAAF5B00E88EC5 /* SignUpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		A3DB4A012BBAAF5B00E88EC5 /* SignUpServiceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpServiceable.swift; sourceTree = "<group>"; };
+		A3DB4A032BBAAF5B00E88EC5 /* SignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		A3DB4A042BBAAF5B00E88EC5 /* SignInServiceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInServiceable.swift; sourceTree = "<group>"; };
+		A3DB4A062BBAAF5B00E88EC5 /* UserInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
+		A3DB4A072BBAAF5B00E88EC5 /* UserInfoServiceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoServiceable.swift; sourceTree = "<group>"; };
+		A3DB4A0A2BBAAF5B00E88EC5 /* Encodable+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Parse.swift"; sourceTree = "<group>"; };
+		A3DB4A0B2BBAAF5B00E88EC5 /* Encodable+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Serialization.swift"; sourceTree = "<group>"; };
+		A3DB4A0C2BBAAF5B00E88EC5 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		A3DB4A0D2BBAAF5B00E88EC5 /* RESTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTService.swift; sourceTree = "<group>"; };
+		A3DB4A0E2BBAAF5B00E88EC5 /* RESTService+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RESTService+App.swift"; sourceTree = "<group>"; };
+		A3DB4A0F2BBAAF5B00E88EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3DB4A112BBAAF5B00E88EC5 /* spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinner.json; sourceTree = "<group>"; };
+		A3DB4A122BBAAF5B00E88EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3DB4A142BBAAF5B00E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3DB4A162BBAAF5B00E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3DB4A182BBAAF5B00E88EC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +277,813 @@
 		A3DB49392BBAAE6100E88EC5 /* ios-starter */ = {
 			isa = PBXGroup;
 			children = (
-				A3DB493A2BBAAE6100E88EC5 /* AppDelegate.swift */,
-				A3DB493C2BBAAE6100E88EC5 /* SceneDelegate.swift */,
-				A3DB493E2BBAAE6100E88EC5 /* ViewController.swift */,
-				A3DB49402BBAAE6100E88EC5 /* Main.storyboard */,
-				A3DB49432BBAAE6300E88EC5 /* Assets.xcassets */,
-				A3DB49452BBAAE6300E88EC5 /* LaunchScreen.storyboard */,
-				A3DB49482BBAAE6300E88EC5 /* Info.plist */,
+				A3DB494E2BBAAF5B00E88EC5 /* ✦ Application */,
+				A3DB4A192BBAAF5C00E88EC5 /* Generated */,
+				A3DB4A102BBAAF5B00E88EC5 /* Resources */,
+				A3DB4A1A2BBAAF5C00E88EC5 /* Utils */,
 			);
 			path = "ios-starter";
+			sourceTree = "<group>";
+		};
+		A3DB494E2BBAAF5B00E88EC5 /* ✦ Application */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49DC2BBAAF5B00E88EC5 /* AppDelegate.swift */,
+				A3DB4A0F2BBAAF5B00E88EC5 /* SceneDelegate.swift */,
+				A3DB494F2BBAAF5B00E88EC5 /* Scene Coordinator */,
+				A3DB495A2BBAAF5B00E88EC5 /* App Session */,
+				A3DB495D2BBAAF5B00E88EC5 /* Screens */,
+				A3DB49B82BBAAF5B00E88EC5 /* Common */,
+				A3DB49DD2BBAAF5B00E88EC5 /* Services */,
+			);
+			path = "✦ Application";
+			sourceTree = "<group>";
+		};
+		A3DB494F2BBAAF5B00E88EC5 /* Scene Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49502BBAAF5B00E88EC5 /* Scene.swift */,
+				A3DB49512BBAAF5B00E88EC5 /* SceneTransition.swift */,
+				A3DB49522BBAAF5B00E88EC5 /* SignIn Flow */,
+				A3DB49552BBAAF5B00E88EC5 /* SceneCoordinatorable.swift */,
+				A3DB49562BBAAF5B00E88EC5 /* SceneCoordinator.swift */,
+				A3DB49572BBAAF5B00E88EC5 /* Main Flow */,
+			);
+			path = "Scene Coordinator";
+			sourceTree = "<group>";
+		};
+		A3DB49522BBAAF5B00E88EC5 /* SignIn Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49532BBAAF5B00E88EC5 /* SignInFlowCoordinatorable.swift */,
+				A3DB49542BBAAF5B00E88EC5 /* SignInFlowCoordinator.swift */,
+			);
+			path = "SignIn Flow";
+			sourceTree = "<group>";
+		};
+		A3DB49572BBAAF5B00E88EC5 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49582BBAAF5B00E88EC5 /* MainFlowCoordinator.swift */,
+				A3DB49592BBAAF5B00E88EC5 /* MainFlowCoordinatable.swift */,
+			);
+			path = "Main Flow";
+			sourceTree = "<group>";
+		};
+		A3DB495A2BBAAF5B00E88EC5 /* App Session */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB495B2BBAAF5B00E88EC5 /* Authorization.swift */,
+				A3DB495C2BBAAF5B00E88EC5 /* AppSession.swift */,
+			);
+			path = "App Session";
+			sourceTree = "<group>";
+		};
+		A3DB495D2BBAAF5B00E88EC5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB495E2BBAAF5B00E88EC5 /* SignIn Flow */,
+				A3DB49932BBAAF5B00E88EC5 /* Common */,
+				A3DB49A92BBAAF5B00E88EC5 /* Main Flow */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A3DB495E2BBAAF5B00E88EC5 /* SignIn Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB495F2BBAAF5B00E88EC5 /* Splash */,
+				A3DB49652BBAAF5B00E88EC5 /* SignUp */,
+				A3DB49722BBAAF5B00E88EC5 /* Reset Password */,
+				A3DB497C2BBAAF5B00E88EC5 /* SignIn */,
+				A3DB49862BBAAF5B00E88EC5 /* Input Verification Code */,
+				A3DB498A2BBAAF5B00E88EC5 /* Verify Email */,
+				A3DB49902BBAAF5B00E88EC5 /* Change Password Verification Code */,
+			);
+			path = "SignIn Flow";
+			sourceTree = "<group>";
+		};
+		A3DB495F2BBAAF5B00E88EC5 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49602BBAAF5B00E88EC5 /* View Controller */,
+				A3DB49622BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A3DB49602BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49612BBAAF5B00E88EC5 /* SplashViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49622BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49632BBAAF5B00E88EC5 /* SplashViewModel.swift */,
+				A3DB49642BBAAF5B00E88EC5 /* SplashViewModelCompatible.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49652BBAAF5B00E88EC5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49662BBAAF5B00E88EC5 /* Model */,
+				A3DB49692BBAAF5B00E88EC5 /* View Controller */,
+				A3DB496B2BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A3DB49662BBAAF5B00E88EC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49672BBAAF5B00E88EC5 /* SignUpForm.swift */,
+				A3DB49682BBAAF5B00E88EC5 /* SignUpFieldType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3DB49692BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB496A2BBAAF5B00E88EC5 /* SignUpViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB496B2BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB496C2BBAAF5B00E88EC5 /* SignUpViewModelCompatible.swift */,
+				A3DB496D2BBAAF5B00E88EC5 /* SignUpViewModel.swift */,
+				A3DB496E2BBAAF5B00E88EC5 /* SignUpStateFieldViewModel.swift */,
+				A3DB496F2BBAAF5B00E88EC5 /* StateAndZipSignUpFieldViewModel.swift */,
+				A3DB49702BBAAF5B00E88EC5 /* SignUpAccountTypeFieldViewModel.swift */,
+				A3DB49712BBAAF5B00E88EC5 /* SignUpFieldViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49722BBAAF5B00E88EC5 /* Reset Password */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49732BBAAF5B00E88EC5 /* Model */,
+				A3DB49762BBAAF5B00E88EC5 /* View Controller */,
+				A3DB49782BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = "Reset Password";
+			sourceTree = "<group>";
+		};
+		A3DB49732BBAAF5B00E88EC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49742BBAAF5B00E88EC5 /* ResetPasswordFieldType.swift */,
+				A3DB49752BBAAF5B00E88EC5 /* ResetPasswordForm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3DB49762BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49772BBAAF5B00E88EC5 /* ResetPasswordViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49782BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49792BBAAF5B00E88EC5 /* ResetPasswordViewModel.swift */,
+				A3DB497A2BBAAF5B00E88EC5 /* ResetPasswordViewModelCompatible.swift */,
+				A3DB497B2BBAAF5B00E88EC5 /* ResetPasswordFieldViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB497C2BBAAF5B00E88EC5 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB497D2BBAAF5B00E88EC5 /* Model */,
+				A3DB49802BBAAF5B00E88EC5 /* View Controller */,
+				A3DB49822BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A3DB497D2BBAAF5B00E88EC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB497E2BBAAF5B00E88EC5 /* SignInForm.swift */,
+				A3DB497F2BBAAF5B00E88EC5 /* SignInFieldType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3DB49802BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49812BBAAF5B00E88EC5 /* SignInViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49822BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49832BBAAF5B00E88EC5 /* SignInFieldViewModel.swift */,
+				A3DB49842BBAAF5B00E88EC5 /* SignInViewModelCompatible.swift */,
+				A3DB49852BBAAF5B00E88EC5 /* SignInViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49862BBAAF5B00E88EC5 /* Input Verification Code */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49872BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = "Input Verification Code";
+			sourceTree = "<group>";
+		};
+		A3DB49872BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49882BBAAF5B00E88EC5 /* InputVerificationCodeViewModelCompatible.swift */,
+				A3DB49892BBAAF5B00E88EC5 /* InputVerificationCodeViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB498A2BBAAF5B00E88EC5 /* Verify Email */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB498B2BBAAF5B00E88EC5 /* View Controller */,
+				A3DB498D2BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = "Verify Email";
+			sourceTree = "<group>";
+		};
+		A3DB498B2BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB498C2BBAAF5B00E88EC5 /* VerifyEmailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB498D2BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB498E2BBAAF5B00E88EC5 /* VerifyEmailViewModelCompatible.swift */,
+				A3DB498F2BBAAF5B00E88EC5 /* VerifyEmailViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49902BBAAF5B00E88EC5 /* Change Password Verification Code */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49912BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = "Change Password Verification Code";
+			sourceTree = "<group>";
+		};
+		A3DB49912BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49922BBAAF5B00E88EC5 /* VerifyEmailToChangePasswordViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49932BBAAF5B00E88EC5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49942BBAAF5B00E88EC5 /* Web View */,
+				A3DB499A2BBAAF5B00E88EC5 /* Alert */,
+				A3DB49A02BBAAF5B00E88EC5 /* Drop Down */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A3DB49942BBAAF5B00E88EC5 /* Web View */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49952BBAAF5B00E88EC5 /* View Controller */,
+				A3DB49972BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = "Web View";
+			sourceTree = "<group>";
+		};
+		A3DB49952BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49962BBAAF5B00E88EC5 /* EmbeddedWebViewViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49972BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49982BBAAF5B00E88EC5 /* EmbeddedWebViewViewModelCompatible.swift */,
+				A3DB49992BBAAF5B00E88EC5 /* EmbeddedWebViewViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB499A2BBAAF5B00E88EC5 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB499B2BBAAF5B00E88EC5 /* View Controller */,
+				A3DB499E2BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		A3DB499B2BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB499C2BBAAF5B00E88EC5 /* AlertViewController.xib */,
+				A3DB499D2BBAAF5B00E88EC5 /* AlertViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB499E2BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB499F2BBAAF5B00E88EC5 /* AlertViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49A02BBAAF5B00E88EC5 /* Drop Down */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49A12BBAAF5B00E88EC5 /* View */,
+				A3DB49A42BBAAF5B00E88EC5 /* View Controller */,
+				A3DB49A72BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = "Drop Down";
+			sourceTree = "<group>";
+		};
+		A3DB49A12BBAAF5B00E88EC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49A22BBAAF5B00E88EC5 /* DropDownItemTableViewCell.swift */,
+				A3DB49A32BBAAF5B00E88EC5 /* DropDownItemTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3DB49A42BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49A52BBAAF5B00E88EC5 /* DropDownViewController.xib */,
+				A3DB49A62BBAAF5B00E88EC5 /* DropDownViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49A72BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49A82BBAAF5B00E88EC5 /* DropDownViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49A92BBAAF5B00E88EC5 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49AA2BBAAF5B00E88EC5 /* Settings */,
+				A3DB49B12BBAAF5B00E88EC5 /* Main */,
+			);
+			path = "Main Flow";
+			sourceTree = "<group>";
+		};
+		A3DB49AA2BBAAF5B00E88EC5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49AB2BBAAF5B00E88EC5 /* View Controller */,
+				A3DB49AE2BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A3DB49AB2BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49AC2BBAAF5B00E88EC5 /* SettingsViewController.xib */,
+				A3DB49AD2BBAAF5B00E88EC5 /* SettingsViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49AE2BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49AF2BBAAF5B00E88EC5 /* SettingsViewModel.swift */,
+				A3DB49B02BBAAF5B00E88EC5 /* SettingsViewModelCompatible.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49B12BBAAF5B00E88EC5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49B22BBAAF5B00E88EC5 /* View Controller */,
+				A3DB49B52BBAAF5B00E88EC5 /* View Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A3DB49B22BBAAF5B00E88EC5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49B32BBAAF5B00E88EC5 /* MainViewController.xib */,
+				A3DB49B42BBAAF5B00E88EC5 /* MainViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49B52BBAAF5B00E88EC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49B62BBAAF5B00E88EC5 /* MainViewModelCompatible.swift */,
+				A3DB49B72BBAAF5B00E88EC5 /* MainViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A3DB49B82BBAAF5B00E88EC5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49B92BBAAF5B00E88EC5 /* UI */,
+				A3DB49D62BBAAF5B00E88EC5 /* ProgressHUD */,
+				A3DB49D82BBAAF5B00E88EC5 /* Tab Bar Controller */,
+				A3DB49DA2BBAAF5B00E88EC5 /* Navigation Controller */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A3DB49B92BBAAF5B00E88EC5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49BA2BBAAF5B00E88EC5 /* Radio Button Group */,
+				A3DB49BC2BBAAF5B00E88EC5 /* Input Form */,
+				A3DB49C22BBAAF5B00E88EC5 /* Input View */,
+				A3DB49C52BBAAF5B00E88EC5 /* Table View Cell */,
+				A3DB49CE2BBAAF5B00E88EC5 /* Radio Button */,
+				A3DB49D02BBAAF5B00E88EC5 /* Verification Code */,
+				A3DB49D42BBAAF5B00E88EC5 /* Text Field */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A3DB49BA2BBAAF5B00E88EC5 /* Radio Button Group */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49BB2BBAAF5B00E88EC5 /* RadioButtonsGroup.swift */,
+			);
+			path = "Radio Button Group";
+			sourceTree = "<group>";
+		};
+		A3DB49BC2BBAAF5B00E88EC5 /* Input Form */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49BD2BBAAF5B00E88EC5 /* InputFieldConfirmPasswordViewModel.swift */,
+				A3DB49BE2BBAAF5B00E88EC5 /* InputFieldRadioButtonViewModel.swift */,
+				A3DB49BF2BBAAF5B00E88EC5 /* InputFieldPickerViewModel.swift */,
+				A3DB49C02BBAAF5B00E88EC5 /* InputForm.swift */,
+				A3DB49C12BBAAF5B00E88EC5 /* InputFieldViewModel.swift */,
+			);
+			path = "Input Form";
+			sourceTree = "<group>";
+		};
+		A3DB49C22BBAAF5B00E88EC5 /* Input View */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49C32BBAAF5B00E88EC5 /* InputView.xib */,
+				A3DB49C42BBAAF5B00E88EC5 /* InputView.swift */,
+			);
+			path = "Input View";
+			sourceTree = "<group>";
+		};
+		A3DB49C52BBAAF5B00E88EC5 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49C62BBAAF5B00E88EC5 /* ButtonTableViewCell.xib */,
+				A3DB49C72BBAAF5B00E88EC5 /* StateAndZipTableViewCell.xib */,
+				A3DB49C82BBAAF5B00E88EC5 /* TextInputTableViewCell.xib */,
+				A3DB49C92BBAAF5B00E88EC5 /* StateAndZipTableViewCell.swift */,
+				A3DB49CA2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.xib */,
+				A3DB49CB2BBAAF5B00E88EC5 /* TextInputTableViewCell.swift */,
+				A3DB49CC2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.swift */,
+				A3DB49CD2BBAAF5B00E88EC5 /* ButtonTableViewCell.swift */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		A3DB49CE2BBAAF5B00E88EC5 /* Radio Button */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49CF2BBAAF5B00E88EC5 /* RadioButton.swift */,
+			);
+			path = "Radio Button";
+			sourceTree = "<group>";
+		};
+		A3DB49D02BBAAF5B00E88EC5 /* Verification Code */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49D12BBAAF5B00E88EC5 /* VerificationCodeView.swift */,
+				A3DB49D22BBAAF5B00E88EC5 /* VerificationCodeView.xib */,
+				A3DB49D32BBAAF5B00E88EC5 /* VerificationCodeViewModel.swift */,
+			);
+			path = "Verification Code";
+			sourceTree = "<group>";
+		};
+		A3DB49D42BBAAF5B00E88EC5 /* Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49D52BBAAF5B00E88EC5 /* VerificationCodeDigitTextField.swift */,
+			);
+			path = "Text Field";
+			sourceTree = "<group>";
+		};
+		A3DB49D62BBAAF5B00E88EC5 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49D72BBAAF5B00E88EC5 /* ProgressHUD.swift */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		A3DB49D82BBAAF5B00E88EC5 /* Tab Bar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49D92BBAAF5B00E88EC5 /* BaseTabBarViewController.swift */,
+			);
+			path = "Tab Bar Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49DA2BBAAF5B00E88EC5 /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49DB2BBAAF5B00E88EC5 /* BaseNavigationController.swift */,
+			);
+			path = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		A3DB49DD2BBAAF5B00E88EC5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49DE2BBAAF5B00E88EC5 /* APIs */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3DB49DE2BBAAF5B00E88EC5 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49DF2BBAAF5B00E88EC5 /* REST */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		A3DB49DF2BBAAF5B00E88EC5 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49E02BBAAF5B00E88EC5 /* App */,
+				A3DB49FE2BBAAF5B00E88EC5 /* Flow Services */,
+				A3DB4A082BBAAF5B00E88EC5 /* Rest Service */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		A3DB49E02BBAAF5B00E88EC5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49E12BBAAF5B00E88EC5 /* AppRestBackend.swift */,
+				A3DB49E22BBAAF5B00E88EC5 /* Responses */,
+				A3DB49E92BBAAF5B00E88EC5 /* Models */,
+				A3DB49EC2BBAAF5B00E88EC5 /* Requests */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A3DB49E22BBAAF5B00E88EC5 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49E32BBAAF5B00E88EC5 /* Register Remote Notification Token */,
+				A3DB49E62BBAAF5B00E88EC5 /* Response.swift */,
+				A3DB49E72BBAAF5B00E88EC5 /* Tokens */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		A3DB49E32BBAAF5B00E88EC5 /* Register Remote Notification Token */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49E42BBAAF5B00E88EC5 /* RegisterPushNotificationsTokenResponse.swift */,
+				A3DB49E52BBAAF5B00E88EC5 /* UnregisterPushNotificationsTokenResponse.swift */,
+			);
+			path = "Register Remote Notification Token";
+			sourceTree = "<group>";
+		};
+		A3DB49E72BBAAF5B00E88EC5 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49E82BBAAF5B00E88EC5 /* TokensResponse.swift */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		A3DB49E92BBAAF5B00E88EC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49EA2BBAAF5B00E88EC5 /* Tokens.swift */,
+				A3DB49EB2BBAAF5B00E88EC5 /* Profile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3DB49EC2BBAAF5B00E88EC5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49ED2BBAAF5B00E88EC5 /* SignUp */,
+				A3DB49EF2BBAAF5B00E88EC5 /* Reset Password */,
+				A3DB49F12BBAAF5B00E88EC5 /* Register Push Notifications Token */,
+				A3DB49F42BBAAF5B00E88EC5 /* User */,
+				A3DB49F62BBAAF5B00E88EC5 /* Image */,
+				A3DB49F82BBAAF5B00E88EC5 /* SignIn */,
+				A3DB49FA2BBAAF5B00E88EC5 /* Update User */,
+				A3DB49FC2BBAAF5B00E88EC5 /* Verify Account */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A3DB49ED2BBAAF5B00E88EC5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49EE2BBAAF5B00E88EC5 /* SignUpRequest.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A3DB49EF2BBAAF5B00E88EC5 /* Reset Password */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49F02BBAAF5B00E88EC5 /* ResetPasswordRequest.swift */,
+			);
+			path = "Reset Password";
+			sourceTree = "<group>";
+		};
+		A3DB49F12BBAAF5B00E88EC5 /* Register Push Notifications Token */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49F22BBAAF5B00E88EC5 /* RegisterPushNotificationsToken.swift */,
+				A3DB49F32BBAAF5B00E88EC5 /* UnregisterPushNotificationsToken.swift */,
+			);
+			path = "Register Push Notifications Token";
+			sourceTree = "<group>";
+		};
+		A3DB49F42BBAAF5B00E88EC5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49F52BBAAF5B00E88EC5 /* GetUser.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A3DB49F62BBAAF5B00E88EC5 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49F72BBAAF5B00E88EC5 /* ImageRequest.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		A3DB49F82BBAAF5B00E88EC5 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49F92BBAAF5B00E88EC5 /* SignInRequest.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A3DB49FA2BBAAF5B00E88EC5 /* Update User */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49FB2BBAAF5B00E88EC5 /* UpdateUser.swift */,
+			);
+			path = "Update User";
+			sourceTree = "<group>";
+		};
+		A3DB49FC2BBAAF5B00E88EC5 /* Verify Account */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49FD2BBAAF5B00E88EC5 /* VerifyAccountRequest.swift */,
+			);
+			path = "Verify Account";
+			sourceTree = "<group>";
+		};
+		A3DB49FE2BBAAF5B00E88EC5 /* Flow Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB49FF2BBAAF5B00E88EC5 /* SignUp */,
+				A3DB4A022BBAAF5B00E88EC5 /* SignIn */,
+				A3DB4A052BBAAF5B00E88EC5 /* UserInfo */,
+			);
+			path = "Flow Services";
+			sourceTree = "<group>";
+		};
+		A3DB49FF2BBAAF5B00E88EC5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A002BBAAF5B00E88EC5 /* SignUpService.swift */,
+				A3DB4A012BBAAF5B00E88EC5 /* SignUpServiceable.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A3DB4A022BBAAF5B00E88EC5 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A032BBAAF5B00E88EC5 /* SignInService.swift */,
+				A3DB4A042BBAAF5B00E88EC5 /* SignInServiceable.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A3DB4A052BBAAF5B00E88EC5 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A062BBAAF5B00E88EC5 /* UserInfoService.swift */,
+				A3DB4A072BBAAF5B00E88EC5 /* UserInfoServiceable.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		A3DB4A082BBAAF5B00E88EC5 /* Rest Service */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A092BBAAF5B00E88EC5 /* Encodable */,
+				A3DB4A0D2BBAAF5B00E88EC5 /* RESTService.swift */,
+				A3DB4A0E2BBAAF5B00E88EC5 /* RESTService+App.swift */,
+			);
+			path = "Rest Service";
+			sourceTree = "<group>";
+		};
+		A3DB4A092BBAAF5B00E88EC5 /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A0A2BBAAF5B00E88EC5 /* Encodable+Parse.swift */,
+				A3DB4A0B2BBAAF5B00E88EC5 /* Encodable+Serialization.swift */,
+				A3DB4A0C2BBAAF5B00E88EC5 /* Encodable+Dictionary.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		A3DB4A102BBAAF5B00E88EC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB4A112BBAAF5B00E88EC5 /* spinner.json */,
+				A3DB4A122BBAAF5B00E88EC5 /* Assets.xcassets */,
+				A3DB4A132BBAAF5B00E88EC5 /* LaunchScreen.storyboard */,
+				A3DB4A152BBAAF5B00E88EC5 /* Main.storyboard */,
+				A3DB4A172BBAAF5B00E88EC5 /* Fonts */,
+				A3DB4A182BBAAF5B00E88EC5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3DB4A172BBAAF5B00E88EC5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A3DB4A192BBAAF5C00E88EC5 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		A3DB4A1A2BBAAF5C00E88EC5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +1144,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DB49472BBAAE6300E88EC5 /* LaunchScreen.storyboard in Resources */,
-				A3DB49442BBAAE6300E88EC5 /* Assets.xcassets in Resources */,
-				A3DB49422BBAAE6100E88EC5 /* Main.storyboard in Resources */,
+				A3DB4A682BBAAF5D00E88EC5 /* VerificationCodeView.xib in Resources */,
+				A3DB4A8F2BBAAF5D00E88EC5 /* Info.plist in Resources */,
+				A3DB4A5F2BBAAF5D00E88EC5 /* StateAndZipTableViewCell.xib in Resources */,
+				A3DB4A5C2BBAAF5D00E88EC5 /* InputView.xib in Resources */,
+				A3DB4A8C2BBAAF5D00E88EC5 /* Assets.xcassets in Resources */,
+				A3DB4A622BBAAF5D00E88EC5 /* RadioButtonsTableViewCell.xib in Resources */,
+				A3DB4A8E2BBAAF5D00E88EC5 /* Main.storyboard in Resources */,
+				A3DB4A8B2BBAAF5D00E88EC5 /* spinner.json in Resources */,
+				A3DB4A4E2BBAAF5C00E88EC5 /* SettingsViewController.xib in Resources */,
+				A3DB4A4B2BBAAF5C00E88EC5 /* DropDownViewController.xib in Resources */,
+				A3DB4A8D2BBAAF5D00E88EC5 /* LaunchScreen.storyboard in Resources */,
+				A3DB4A602BBAAF5D00E88EC5 /* TextInputTableViewCell.xib in Resources */,
+				A3DB4A5E2BBAAF5D00E88EC5 /* ButtonTableViewCell.xib in Resources */,
+				A3DB4A4A2BBAAF5C00E88EC5 /* DropDownItemTableViewCell.xib in Resources */,
+				A3DB4A522BBAAF5D00E88EC5 /* MainViewController.xib in Resources */,
+				A3DB4A462BBAAF5C00E88EC5 /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +1170,127 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DB493F2BBAAE6100E88EC5 /* ViewController.swift in Sources */,
-				A3DB493B2BBAAE6100E88EC5 /* AppDelegate.swift in Sources */,
-				A3DB493D2BBAAE6100E88EC5 /* SceneDelegate.swift in Sources */,
+				A3DB4A832BBAAF5D00E88EC5 /* UserInfoService.swift in Sources */,
+				A3DB4A6F2BBAAF5D00E88EC5 /* AppRestBackend.swift in Sources */,
+				A3DB4A242BBAAF5C00E88EC5 /* AppSession.swift in Sources */,
+				A3DB4A3E2BBAAF5C00E88EC5 /* InputVerificationCodeViewModel.swift in Sources */,
+				A3DB4A652BBAAF5D00E88EC5 /* ButtonTableViewCell.swift in Sources */,
+				A3DB4A4C2BBAAF5C00E88EC5 /* DropDownViewController.swift in Sources */,
+				A3DB4A272BBAAF5C00E88EC5 /* SplashViewModelCompatible.swift in Sources */,
+				A3DB4A482BBAAF5C00E88EC5 /* AlertViewModel.swift in Sources */,
+				A3DB4A512BBAAF5C00E88EC5 /* SettingsViewModelCompatible.swift in Sources */,
+				A3DB4A412BBAAF5C00E88EC5 /* VerifyEmailViewModel.swift in Sources */,
+				A3DB4A692BBAAF5D00E88EC5 /* VerificationCodeViewModel.swift in Sources */,
+				A3DB4A492BBAAF5C00E88EC5 /* DropDownItemTableViewCell.swift in Sources */,
+				A3DB4A8A2BBAAF5D00E88EC5 /* SceneDelegate.swift in Sources */,
+				A3DB4A442BBAAF5C00E88EC5 /* EmbeddedWebViewViewModelCompatible.swift in Sources */,
+				A3DB4A2F2BBAAF5C00E88EC5 /* SignUpAccountTypeFieldViewModel.swift in Sources */,
+				A3DB4A7D2BBAAF5D00E88EC5 /* UpdateUser.swift in Sources */,
+				A3DB4A2D2BBAAF5C00E88EC5 /* SignUpStateFieldViewModel.swift in Sources */,
+				A3DB4A472BBAAF5C00E88EC5 /* AlertViewController.swift in Sources */,
+				A3DB4A782BBAAF5D00E88EC5 /* RegisterPushNotificationsToken.swift in Sources */,
+				A3DB4A4D2BBAAF5C00E88EC5 /* DropDownViewModel.swift in Sources */,
+				A3DB4A852BBAAF5D00E88EC5 /* Encodable+Parse.swift in Sources */,
+				A3DB4A1B2BBAAF5C00E88EC5 /* Scene.swift in Sources */,
+				A3DB4A7A2BBAAF5D00E88EC5 /* GetUser.swift in Sources */,
+				A3DB4A3F2BBAAF5C00E88EC5 /* VerifyEmailViewController.swift in Sources */,
+				A3DB4A1D2BBAAF5C00E88EC5 /* SignInFlowCoordinatorable.swift in Sources */,
+				A3DB4A5B2BBAAF5D00E88EC5 /* InputFieldViewModel.swift in Sources */,
+				A3DB4A842BBAAF5D00E88EC5 /* UserInfoServiceable.swift in Sources */,
+				A3DB4A802BBAAF5D00E88EC5 /* SignUpServiceable.swift in Sources */,
+				A3DB4A592BBAAF5D00E88EC5 /* InputFieldPickerViewModel.swift in Sources */,
+				A3DB4A5D2BBAAF5D00E88EC5 /* InputView.swift in Sources */,
+				A3DB4A452BBAAF5C00E88EC5 /* EmbeddedWebViewViewModel.swift in Sources */,
+				A3DB4A552BBAAF5D00E88EC5 /* MainViewModel.swift in Sources */,
+				A3DB4A892BBAAF5D00E88EC5 /* RESTService+App.swift in Sources */,
+				A3DB4A5A2BBAAF5D00E88EC5 /* InputForm.swift in Sources */,
+				A3DB4A382BBAAF5C00E88EC5 /* SignInFieldType.swift in Sources */,
+				A3DB4A2C2BBAAF5C00E88EC5 /* SignUpViewModel.swift in Sources */,
+				A3DB4A7B2BBAAF5D00E88EC5 /* ImageRequest.swift in Sources */,
+				A3DB4A7E2BBAAF5D00E88EC5 /* VerifyAccountRequest.swift in Sources */,
+				A3DB4A6A2BBAAF5D00E88EC5 /* VerificationCodeDigitTextField.swift in Sources */,
+				A3DB4A822BBAAF5D00E88EC5 /* SignInServiceable.swift in Sources */,
+				A3DB4A372BBAAF5C00E88EC5 /* SignInForm.swift in Sources */,
+				A3DB4A332BBAAF5C00E88EC5 /* ResetPasswordViewController.swift in Sources */,
+				A3DB4A352BBAAF5C00E88EC5 /* ResetPasswordViewModelCompatible.swift in Sources */,
+				A3DB4A882BBAAF5D00E88EC5 /* RESTService.swift in Sources */,
+				A3DB4A642BBAAF5D00E88EC5 /* RadioButtonsTableViewCell.swift in Sources */,
+				A3DB4A3B2BBAAF5C00E88EC5 /* SignInViewModelCompatible.swift in Sources */,
+				A3DB4A812BBAAF5D00E88EC5 /* SignInService.swift in Sources */,
+				A3DB4A6D2BBAAF5D00E88EC5 /* BaseNavigationController.swift in Sources */,
+				A3DB4A432BBAAF5C00E88EC5 /* EmbeddedWebViewViewController.swift in Sources */,
+				A3DB4A6E2BBAAF5D00E88EC5 /* AppDelegate.swift in Sources */,
+				A3DB4A2B2BBAAF5C00E88EC5 /* SignUpViewModelCompatible.swift in Sources */,
+				A3DB4A342BBAAF5C00E88EC5 /* ResetPasswordViewModel.swift in Sources */,
+				A3DB4A662BBAAF5D00E88EC5 /* RadioButton.swift in Sources */,
+				A3DB4A402BBAAF5C00E88EC5 /* VerifyEmailViewModelCompatible.swift in Sources */,
+				A3DB4A532BBAAF5D00E88EC5 /* MainViewController.swift in Sources */,
+				A3DB4A762BBAAF5D00E88EC5 /* SignUpRequest.swift in Sources */,
+				A3DB4A752BBAAF5D00E88EC5 /* Profile.swift in Sources */,
+				A3DB4A3A2BBAAF5C00E88EC5 /* SignInFieldViewModel.swift in Sources */,
+				A3DB4A262BBAAF5C00E88EC5 /* SplashViewModel.swift in Sources */,
+				A3DB4A302BBAAF5C00E88EC5 /* SignUpFieldViewModel.swift in Sources */,
+				A3DB4A6C2BBAAF5D00E88EC5 /* BaseTabBarViewController.swift in Sources */,
+				A3DB4A792BBAAF5D00E88EC5 /* UnregisterPushNotificationsToken.swift in Sources */,
+				A3DB4A542BBAAF5D00E88EC5 /* MainViewModelCompatible.swift in Sources */,
+				A3DB4A222BBAAF5C00E88EC5 /* MainFlowCoordinatable.swift in Sources */,
+				A3DB4A4F2BBAAF5C00E88EC5 /* SettingsViewController.swift in Sources */,
+				A3DB4A742BBAAF5D00E88EC5 /* Tokens.swift in Sources */,
+				A3DB4A7C2BBAAF5D00E88EC5 /* SignInRequest.swift in Sources */,
+				A3DB4A1E2BBAAF5C00E88EC5 /* SignInFlowCoordinator.swift in Sources */,
+				A3DB4A772BBAAF5D00E88EC5 /* ResetPasswordRequest.swift in Sources */,
+				A3DB4A672BBAAF5D00E88EC5 /* VerificationCodeView.swift in Sources */,
+				A3DB4A7F2BBAAF5D00E88EC5 /* SignUpService.swift in Sources */,
+				A3DB4A202BBAAF5C00E88EC5 /* SceneCoordinator.swift in Sources */,
+				A3DB4A212BBAAF5C00E88EC5 /* MainFlowCoordinator.swift in Sources */,
+				A3DB4A6B2BBAAF5D00E88EC5 /* ProgressHUD.swift in Sources */,
+				A3DB4A232BBAAF5C00E88EC5 /* Authorization.swift in Sources */,
+				A3DB4A502BBAAF5C00E88EC5 /* SettingsViewModel.swift in Sources */,
+				A3DB4A702BBAAF5D00E88EC5 /* RegisterPushNotificationsTokenResponse.swift in Sources */,
+				A3DB4A2A2BBAAF5C00E88EC5 /* SignUpViewController.swift in Sources */,
+				A3DB4A1F2BBAAF5C00E88EC5 /* SceneCoordinatorable.swift in Sources */,
+				A3DB4A582BBAAF5D00E88EC5 /* InputFieldRadioButtonViewModel.swift in Sources */,
+				A3DB4A562BBAAF5D00E88EC5 /* RadioButtonsGroup.swift in Sources */,
+				A3DB4A1C2BBAAF5C00E88EC5 /* SceneTransition.swift in Sources */,
+				A3DB4A252BBAAF5C00E88EC5 /* SplashViewController.swift in Sources */,
+				A3DB4A722BBAAF5D00E88EC5 /* Response.swift in Sources */,
+				A3DB4A3C2BBAAF5C00E88EC5 /* SignInViewModel.swift in Sources */,
+				A3DB4A392BBAAF5C00E88EC5 /* SignInViewController.swift in Sources */,
+				A3DB4A632BBAAF5D00E88EC5 /* TextInputTableViewCell.swift in Sources */,
+				A3DB4A362BBAAF5C00E88EC5 /* ResetPasswordFieldViewModel.swift in Sources */,
+				A3DB4A612BBAAF5D00E88EC5 /* StateAndZipTableViewCell.swift in Sources */,
+				A3DB4A2E2BBAAF5C00E88EC5 /* StateAndZipSignUpFieldViewModel.swift in Sources */,
+				A3DB4A422BBAAF5C00E88EC5 /* VerifyEmailToChangePasswordViewModel.swift in Sources */,
+				A3DB4A322BBAAF5C00E88EC5 /* ResetPasswordForm.swift in Sources */,
+				A3DB4A872BBAAF5D00E88EC5 /* Encodable+Dictionary.swift in Sources */,
+				A3DB4A282BBAAF5C00E88EC5 /* SignUpForm.swift in Sources */,
+				A3DB4A572BBAAF5D00E88EC5 /* InputFieldConfirmPasswordViewModel.swift in Sources */,
+				A3DB4A292BBAAF5C00E88EC5 /* SignUpFieldType.swift in Sources */,
+				A3DB4A732BBAAF5D00E88EC5 /* TokensResponse.swift in Sources */,
+				A3DB4A3D2BBAAF5C00E88EC5 /* InputVerificationCodeViewModelCompatible.swift in Sources */,
+				A3DB4A862BBAAF5D00E88EC5 /* Encodable+Serialization.swift in Sources */,
+				A3DB4A312BBAAF5C00E88EC5 /* ResetPasswordFieldType.swift in Sources */,
+				A3DB4A712BBAAF5D00E88EC5 /* UnregisterPushNotificationsTokenResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A3DB49402BBAAE6100E88EC5 /* Main.storyboard */ = {
+		A3DB4A132BBAAF5B00E88EC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A3DB49412BBAAE6100E88EC5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A3DB49452BBAAE6300E88EC5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3DB49462BBAAE6300E88EC5 /* Base */,
+				A3DB4A142BBAAF5B00E88EC5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3DB4A152BBAAF5B00E88EC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3DB4A162BBAAF5B00E88EC5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

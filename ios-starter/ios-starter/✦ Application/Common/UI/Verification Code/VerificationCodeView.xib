@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VerificationCodeView" customModule="EightTwenty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voe-Bb-rXs">
+                    <rect key="frame" x="20" y="10" width="374" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1v6-Jq-QNG">
+                    <rect key="frame" x="20" y="41" width="374" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="L3e-G4-vVn">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="L3e-G4-vVn" secondAttribute="trailing" id="DnB-DY-Ob7"/>
+                        <constraint firstItem="L3e-G4-vVn" firstAttribute="leading" secondItem="1v6-Jq-QNG" secondAttribute="leading" id="Qz3-Gu-qJk"/>
+                        <constraint firstItem="L3e-G4-vVn" firstAttribute="top" secondItem="1v6-Jq-QNG" secondAttribute="top" id="Tx5-IC-psz"/>
+                        <constraint firstAttribute="height" constant="40" id="aYg-Lm-Ufi"/>
+                        <constraint firstAttribute="bottom" secondItem="L3e-G4-vVn" secondAttribute="bottom" id="nSP-6S-hZ4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-AI-Khw">
+                    <rect key="frame" x="20" y="86" width="374" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="XqW-MN-nhe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1v6-Jq-QNG" firstAttribute="leading" secondItem="Voe-Bb-rXs" secondAttribute="leading" id="0xh-Nh-Zie"/>
+                <constraint firstItem="b3J-AI-Khw" firstAttribute="leading" secondItem="1v6-Jq-QNG" secondAttribute="leading" id="3af-P6-f3I"/>
+                <constraint firstItem="Voe-Bb-rXs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Dhr-zG-lyH"/>
+                <constraint firstItem="Voe-Bb-rXs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Gfr-Ib-XBM"/>
+                <constraint firstAttribute="trailing" secondItem="Voe-Bb-rXs" secondAttribute="trailing" constant="20" id="JvA-4K-Y0G"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="b3J-AI-Khw" secondAttribute="bottom" constant="10" id="KSO-Ns-q6x"/>
+                <constraint firstItem="b3J-AI-Khw" firstAttribute="top" secondItem="1v6-Jq-QNG" secondAttribute="bottom" constant="5" id="MV9-3J-XgE"/>
+                <constraint firstItem="b3J-AI-Khw" firstAttribute="trailing" secondItem="1v6-Jq-QNG" secondAttribute="trailing" id="QGK-fL-KHZ"/>
+                <constraint firstItem="1v6-Jq-QNG" firstAttribute="top" secondItem="Voe-Bb-rXs" secondAttribute="bottom" constant="5" id="huf-hk-1DU"/>
+                <constraint firstItem="1v6-Jq-QNG" firstAttribute="trailing" secondItem="Voe-Bb-rXs" secondAttribute="trailing" id="unJ-uy-gX0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="errorLabel" destination="b3J-AI-Khw" id="iHW-nU-iah"/>
+                <outlet property="textFieldsStackView" destination="L3e-G4-vVn" id="WHk-5X-LKL"/>
+                <outlet property="titleLabel" destination="Voe-Bb-rXs" id="dgV-YE-KNh"/>
+            </connections>
+            <point key="canvasLocation" x="13.043478260869566" y="-115.17857142857142"/>
+        </view>
+    </objects>
+</document>
