@@ -1,0 +1,14 @@
+//
+//  Production.xcconfig
+//  ios-starter
+//
+//  Created by Aleksey Bidnyk on 2.04.2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+XCC_BUNDLE_ID = com.abidnyk.ios-starter
+XCC_BUNDLE_NAME = iOS-Starter
+XCC_CONFIG_PATH = Production/Config.plist
+FIREBASE_CONFIG_PATH = Production/GoogleService-Info.plist

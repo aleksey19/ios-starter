@@ -37,7 +37,7 @@ extension UILabel {
         
         case .mainPage:
             set(text: text,
-                font: .telegraf,
+                font: .workSans,
                 style: .medium,
                 size: 40,
                 color: color,
@@ -47,7 +47,7 @@ extension UILabel {
             
         case .mainPageLight:
             set(text: text,
-                font: .telegraf,
+                font: .workSans,
                 style: .light,
                 size: 40,
                 color: color,
@@ -57,7 +57,7 @@ extension UILabel {
             
         case .mainPageSmall:
             set(text: text,
-                font: .telegraf,
+                font: .workSans,
                 style: .medium,
                 size: 30,
                 color: color,
@@ -67,7 +67,7 @@ extension UILabel {
             
         case .subPage:
             set(text: text,
-                font: .telegraf,
+                font: .workSans,
                 style: .medium,
                 size: 24,
                 color: color,
@@ -78,7 +78,7 @@ extension UILabel {
             paragraphStyle.lineHeightMultiple = 1.13
             
             set(text: text,
-                font: .telegraf,
+                font: .workSans,
                 style: .medium,
                 size: 20,
                 color: color,
@@ -100,7 +100,7 @@ extension UILabel {
             let size: CGFloat = type == .regular ? 16 : 14
             
             set(text: text,
-                font: .telegraf,
+                font: .workSans,
                 style: .regular,
                 size: size,
                 color: color,
@@ -111,7 +111,7 @@ extension UILabel {
             let size: CGFloat = type == .regular ? 16 : 14
             
             set(text: text,
-                font: .telegraf,
+                font: .workSans,
                 style: .medium,
                 size: size,
                 color: color,
@@ -122,7 +122,7 @@ extension UILabel {
             paragraphStyle.lineHeightMultiple = 1.04
             
             set(text: text,
-                font: .inputMono,
+                font: .workSans,
                 style: .light,
                 size: 12,
                 color: color,
@@ -139,7 +139,7 @@ extension UILabel {
         paragraphStyle.lineHeightMultiple = 1.18
         
         set(text: text,
-            font: .telegraf,
+            font: .workSans,
             style: .regular,
             size: 16,
             color: color,
@@ -154,7 +154,7 @@ extension UILabel {
         paragraphStyle.lineHeightMultiple = 0.83
         
         set(text: text,
-            font: .inputMono,
+            font: .workSans,
             style: .medium,
             size: 10,
             color: color,
@@ -163,8 +163,8 @@ extension UILabel {
     }
     
     private func set(text: String?,
-                     font: UIFont.ETWFont,
-                     style: UIFont.ETWFontStyle,
+                     font: UIFont.Font,
+                     style: UIFont.FontStyle,
                      size: CGFloat,
                      color: UIColor,
                      backgroundColor: UIColor,
@@ -209,97 +209,11 @@ extension UILabel {
         paragraphStyle.alignment = .center
         
         set(text: text,
-            font: .telegraf,
+            font: .workSans,
             style: .medium,
             size: 11,
             color: color,
             backgroundColor: .clear,
             paragraphStyle: paragraphStyle)
-    }
-    
-    func setBadgeStyle(with text: String,
-                       color: UIColor) {
-        let font = UIFont.getFont(with: .inputMono,
-                                  style: .medium,
-                                  size: 10)
-        
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineHeightMultiple = 0.83
-        paragraphStyle.alignment = .center
-        
-        let attributes: [NSAttributedString.Key: Any] = [.font: font,
-                                                         .foregroundColor: color,
-                                                         .backgroundColor: UIColor.clear,
-                                                         .paragraphStyle: paragraphStyle]
-        
-        let attributedText = NSMutableAttributedString(string: text,
-                                                       attributes: attributes)
-        
-        self.attributedText = attributedText
-        backgroundColor = .accent
-    }
-    
-    func setTagStyle(with text: String?,
-                     color: UIColor) {
-        let font = UIFont.getFont(with: .inputMono,
-                                  style: .medium,
-                                  size: 10)
-        
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineHeightMultiple = 0.83
-        paragraphStyle.alignment = .center
-        
-        let attributes: [NSAttributedString.Key: Any] = [.font: font,
-                                                         .foregroundColor: color,
-                                                         .backgroundColor: UIColor.clear,
-                                                         .paragraphStyle: paragraphStyle,
-                                                         .underlineStyle: NSUnderlineStyle.single.rawValue,
-                                                         .underlineColor: UIColor.accent]
-        
-        let attributedText = NSMutableAttributedString(string: text ?? "",
-                                                       attributes: attributes)
-        
-        self.attributedText = attributedText
-        backgroundColor = .accent
-    }
-    
-    func setChartSelectedDateStyle(with text: String?) {
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineHeightMultiple = 0.83
-        
-        set(text: text,
-            font: .inputMono,
-            style: .medium,
-            size: 14,
-            color: .mainText,
-            backgroundColor: .clear,
-            kern: -0.3,
-            paragraphStyle: paragraphStyle)
-    }
-    
-    func setMarketingMessageStyle(with text: String?,
-                                  color: UIColor) {
-        let text = "\(text ?? "") Learn More"
-        
-        let font = UIFont.getFont(with: .telegraf,
-                                  style: .medium,
-                                  size: 14)
-        
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineHeightMultiple = 1
-        paragraphStyle.alignment = .left
-        paragraphStyle.minimumLineHeight = 17.5
-        
-        let attributes: [NSAttributedString.Key: Any] = [.font: font,
-                                                         .foregroundColor: color,
-                                                         .backgroundColor: UIColor.clear,
-                                                         .paragraphStyle: paragraphStyle]
-
-        let attributedText = NSMutableAttributedString(string: text ?? "",
-                                                       attributes: attributes)
-        attributedText.addAttributes([.underlineStyle: NSUnderlineStyle.single.rawValue],
-                                     range: NSRange(location: text.count - 10, length: 10))
-        
-        self.attributedText = attributedText
     }
 }

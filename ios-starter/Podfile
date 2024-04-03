@@ -1,0 +1,33 @@
+platform :ios, '13.0'
+use_frameworks!
+
+def pods
+  
+  # Quality
+  pod 'SwiftLint'
+  
+  # Rx
+  pod 'RxSwift', '~> 5.1.1'
+  pod 'RxOptional'
+  pod 'RxDataSources'
+  
+  # Database
+  pod 'RealmSwift', '~> 10.5.2'
+  
+  # Firebase
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'FirebaseAuth'
+  
+  # Login
+  pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
+  
+  # Animation
+  pod 'lottie-ios'
+  
+end
+
+target 'ios-starter' do
+  pods
+end

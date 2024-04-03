@@ -9,7 +9,7 @@ import UIKit
 
 extension UITextField {
     
-    func setETWStyle(with text: String?,
+    func setStyle(with text: String?,
                      placeholder: String?,
                      textColor: UIColor,
                      placeholderColor: UIColor,
@@ -17,7 +17,7 @@ extension UITextField {
                      shouldSetDefaultTextAttributes: Bool = true) {
         self.text = text
         
-        let font = UIFont.getFont(with: .telegraf,
+        let font = UIFont.getFont(with: .workSans,
                                   style: .regular,
                                   size: 16)
         let paragraphStyle = NSMutableParagraphStyle()
