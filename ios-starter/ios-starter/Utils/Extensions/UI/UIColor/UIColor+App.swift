@@ -10,34 +10,34 @@ import UIKit
 extension UIColor {
     
     static var mainBg: UIColor {
-        return UIColor(named: "lf-deep-ocean") ?? .black
+        return UIColor(named: "deep-ocean") ?? .black
     }
     
     static var accent: UIColor {
-        return UIColor(named: "lf-cyan") ?? .systemBlue
+        return UIColor(named: "cyan") ?? .systemBlue
     }
     
     static var cardsBg: UIColor {
-        return UIColor(named: "lf-seabed-gray") ?? .black//.black.alpha(0.75)
+        return UIColor(named: "seabed-gray") ?? .black//.black.alpha(0.75)
     }
     
     static var divider: UIColor {
-        return UIColor(named: "lf-seabed-gray") ?? .black//.alpha(0.5)
+        return UIColor(named: "seabed-gray") ?? .black//.alpha(0.5)
     }
     
     static var placeholder: UIColor {
-        return UIColor(named: "lf-storm-gray") ?? .darkGray//.alpha(0.25)
+        return UIColor(named: "storm-gray") ?? .darkGray//.alpha(0.25)
     }
     
     static var secondaryText: UIColor {
-        return UIColor(named: "lf-storm-gray") ?? .lightGray
+        return UIColor(named: "storm-gray") ?? .lightGray
     }
     
     static var mainText: UIColor {
-        return UIColor(named: "lf-hazy-gray") ?? .white
+        return UIColor(named: "hazy-gray") ?? .white
     }
     
     static var error: UIColor {
-        return UIColor(named: "lf-red-cavair") ?? .orange
+        return UIColor(named: "red-cavair") ?? .orange
     }
 }
