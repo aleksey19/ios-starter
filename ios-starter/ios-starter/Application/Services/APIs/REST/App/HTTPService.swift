@@ -101,4 +101,22 @@ class HTTPService: HTTPClient {
     func logResponse(_ response: URLResponse?, data: Data?, error: Error?) {
         
     }
+    
+    // MARK: - Retry / Refresh token counters
+    
+    func resetRetryConuter() {
+        retryCounter = presetRetryCount
+    }
+    
+    func decrementRetryConuter() {
+        retryCounter -= 1
+    }
+    
+    func resetRefreshTokenConuter() {
+        refreshTokenRetryCounter = presetRefreshTokenRetryCount
+    }
+    
+    func decrementRefreshTokenConuter() {
+        refreshTokenRetryCounter -= 1
+    }
 }
