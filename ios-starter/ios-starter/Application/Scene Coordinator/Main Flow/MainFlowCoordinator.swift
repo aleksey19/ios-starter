@@ -48,7 +48,7 @@ extension MainFlowCoordinator: MainFlowCoordinatable {
     
     func showMain() {
         let restBackend = session.appRESTBackend
-        let viewModel = MainViewModel(restBackend: restBackend)
+        let viewModel = MainViewModel(restBackend: restBackend, coordinator: self)
 
         self.transition(to: Scene.dashboard(viewModel),
                         transition: .root)
@@ -56,7 +56,7 @@ extension MainFlowCoordinator: MainFlowCoordinatable {
     
     func showTabBarMain() {
         let restBackend = session.appRESTBackend
-        let mainViewModel = MainViewModel(restBackend: restBackend)
+        let mainViewModel = MainViewModel(restBackend: restBackend, coordinator: self)
         let settingsViewModel = SettingsViewModel()
 
         self.transition(to: Scene.tabBarDashboard(mainViewModel, settingsViewModel),

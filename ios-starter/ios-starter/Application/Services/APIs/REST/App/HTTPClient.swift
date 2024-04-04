@@ -25,9 +25,12 @@ protocol HTTPClient: AnyObject {
     var retryCounter: Int { get }
     var refreshTokenRetryCounter: Int { get }
     
-    func makeURLRequest(_ request: HTTPRequest) throws -> URLRequest?
+    func makeURLRequest(_ request: HTTPRequest) throws -> URLRequest
+    func makeImageURLRequest(_ urlString: String) throws -> URLRequest
     func composeRequestHeaders() -> [String: String]
     func run<T: Decodable>(_ request: URLRequest, completion: ((Result<T>) -> Void)?)
+    
+    func downloadImage(with urlString: String, completion: ((Result<Data>) -> Void)?)
     
     func logRequest(_ request: URLRequest)
     func logResponse(_ response: URLResponse?, data: Data?, error: Error?)
@@ -67,7 +70,7 @@ extension HTTPClient {
         return headers
     }
     
-    func makeURLRequest(_ request: HTTPRequest) throws -> URLRequest? {
+    func makeURLRequest(_ request: HTTPRequest) throws -> URLRequest {
         var urlComponents = URLComponents()
         urlComponents.scheme = scheme
         urlComponents.host = host
@@ -92,6 +95,16 @@ extension HTTPClient {
         } else {
             throw wrongUrlError
         }
+    }
+    
+    func makeImageURLRequest(_ urlString: String) throws -> URLRequest {
+        guard let url = URL(string: urlString)
+        else {
+            throw AppError.develop("Can't construct url from \(urlString)")
+        }
+        
+        var urlRequest = URLRequest(url: url)
+        return urlRequest
     }
     
     private var wrongUrlError: Error {
@@ -229,6 +242,30 @@ extension HTTPClient {
             }
         }
         task?.resume()
+    }
+    
+    func downloadImage(with urlString: String, completion: ((Result<Data>) -> Void)?) {
+        do {
+            let request = try makeImageURLRequest(urlString)
+            
+            self.task = session.dataTask(with: request) { (data, response, error) in
+                if let error = error {
+                    completion?(.failure(error))
+                    return
+                }
+                
+                if let data = data {
+                    completion?(.success(data))
+                    return
+                }
+            }
+            
+            task?.resume()
+            
+        } catch let error {
+            AppLogger.shared.log(error: error)
+            completion?(.failure(error))
+        }
     }
 }
 

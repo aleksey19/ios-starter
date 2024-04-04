@@ -10,7 +10,7 @@ import UIKit
 class AppSession: NSObject {
     
     lazy private(set) var appRESTBackend: HTTPClient = {
-        let httpService = HTTPService(host: ConfigLoader.parseConfig().apiUrl,
+        let httpService = AppHTTPClient(host: ConfigLoader.parseConfig().apiUrl,
                                       apiVersion: "v1",
                                       retryCount: 1,
                                       refreshTokenCount: 1,

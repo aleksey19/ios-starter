@@ -38,7 +38,7 @@ class SceneCoordinator: SceneCoordinatorable {
         self.window = window
         self.session = session
         
-        UINavigationBar.appearance().backIndicatorImage = UIImage()
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "back")
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage()
     }
     
@@ -48,11 +48,13 @@ class SceneCoordinator: SceneCoordinatorable {
         let viewModel = SplashViewModel()
         self.transition(to: Scene.splash(viewModel))
         
-        if isActiveSession {
-            startMainFlow()
-        } else {
-            startSignInFlow()
-        }
+//        if isActiveSession {
+//            startMainFlow()
+//        } else {
+//            startSignInFlow()
+//        }
+        
+        startMainFlow()
     }
     
     func finish() {

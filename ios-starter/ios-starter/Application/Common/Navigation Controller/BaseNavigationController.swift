@@ -58,16 +58,16 @@ extension BaseNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
-        viewController.navigationItem.hidesBackButton = true
-
-        let backImage = UIImage(named: "back")
-
-        let item = UIBarButtonItem(image: backImage,
-                                   style: .plain,
-                                   target: self,
-                                   action: #selector(back))
-        
-        viewController.navigationItem.leftBarButtonItems = [item]
+//        viewController.navigationItem.hidesBackButton = true
+//
+//        let backImage = UIImage(named: "back")
+//
+//        let item = UIBarButtonItem(image: backImage,
+//                                   style: .plain,
+//                                   target: self,
+//                                   action: #selector(back))
+//        
+//        viewController.navigationItem.leftBarButtonItems = [item]
     }
 }
 

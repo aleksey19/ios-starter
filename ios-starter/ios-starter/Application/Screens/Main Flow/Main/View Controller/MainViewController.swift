@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
         view.backgroundColor = .systemBlue
         
         let label = UILabel()
-        label.text = "Welcome!"
+        label.text = "Welcome! By the way, look at this gorgeous emerald car!"
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -36,8 +36,9 @@ class MainViewController: UIViewController {
             label.bottomAnchor.constraint(equalTo: imageView.topAnchor, constant: -20)
         ])
         
-        viewModel.loadImage()
         bindViewModel()
+        
+        viewModel.loadImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +50,7 @@ class MainViewController: UIViewController {
     private func bindViewModel() {
         viewModel
             .image
+            .observeOn(MainScheduler.instance)
             .bind(to: imageView.rx.image)
             .disposed(by: bag)
     }

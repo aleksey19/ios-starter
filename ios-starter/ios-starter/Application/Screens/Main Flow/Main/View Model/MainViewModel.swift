@@ -10,14 +10,19 @@ import RxSwift
 
 class MainViewModel: MainViewModelCompatible {
     
-    lazy private(set) var image = PublishSubject<UIImage>()
-    
     private weak var httpClient: HTTPClient?
+    private weak var coordinator: MainFlowCoordinatable?
+    
+    // MARK: - Output
+    
+    lazy private(set) var image = PublishSubject<UIImage>()
     
     // MARK: - Init
     
-    init(restBackend: HTTPClient) {
+    init(restBackend: HTTPClient,
+         coordinator: MainFlowCoordinatable) {
         self.httpClient = restBackend
+        self.coordinator = coordinator
     }
     
     func loadImage() {
@@ -26,12 +31,20 @@ class MainViewModel: MainViewModelCompatible {
         DispatchQueue
             .global(qos: .userInitiated)
             .async { [weak self] in
-//                self?.httpClient.image(url: urlString) { [weak self] (data, error) in
-//                    if let data = data,
-//                       let image = UIImage(data: data) {
-//                        self?.image.onNext(image)
-//                    }
-//                }
+                self?.httpClient?.downloadImage(with: urlString, completion: { [weak self] result in
+                    switch result {
+                        
+                    case .success(let data):
+                        if let image = UIImage(data: data) {
+                            self?.image.onNext(image)
+                        }
+                        
+                    case .failure(let error):
+                        executeOnMainThread { [weak self] in
+                            self?.coordinator?.showError(error: error)
+                        }
+                    }
+                })
             }
     }
 }

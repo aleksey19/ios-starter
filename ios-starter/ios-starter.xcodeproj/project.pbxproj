@@ -157,7 +157,7 @@
 		A3DB4AEA2BBAB90500E88EC5 /* UITextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AC82BBAB90500E88EC5 /* UITextField+Style.swift */; };
 		A3DB4AEB2BBAB90500E88EC5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4ACA2BBAB90500E88EC5 /* Reusable.swift */; };
 		A3DB4AED2BBABD8C00E88EC5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AEC2BBABD8C00E88EC5 /* HTTPClient.swift */; };
-		A3DB4AEF2BBAC42100E88EC5 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AEE2BBAC42100E88EC5 /* HTTPService.swift */; };
+		A3DB4AEF2BBAC42100E88EC5 /* AppHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AEE2BBAC42100E88EC5 /* AppHTTPClient.swift */; };
 		A3DB4AF12BBACC4600E88EC5 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AF02BBACC4600E88EC5 /* HTTPRequest.swift */; };
 		A3DB4AF32BBACD5D00E88EC5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AF22BBACD5D00E88EC5 /* Result.swift */; };
 		A3DB4AF72BBAFE8300E88EC5 /* SignUpRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4AF62BBAFE8300E88EC5 /* SignUpRequestBody.swift */; };
@@ -334,7 +334,7 @@
 		A3DB4AC82BBAB90500E88EC5 /* UITextField+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Style.swift"; sourceTree = "<group>"; };
 		A3DB4ACA2BBAB90500E88EC5 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		A3DB4AEC2BBABD8C00E88EC5 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		A3DB4AEE2BBAC42100E88EC5 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		A3DB4AEE2BBAC42100E88EC5 /* AppHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHTTPClient.swift; sourceTree = "<group>"; };
 		A3DB4AF02BBACC4600E88EC5 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		A3DB4AF22BBACD5D00E88EC5 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A3DB4AF62BBAFE8300E88EC5 /* SignUpRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequestBody.swift; sourceTree = "<group>"; };
@@ -1029,7 +1029,7 @@
 				A3DB4AF22BBACD5D00E88EC5 /* Result.swift */,
 				A3DB4AF02BBACC4600E88EC5 /* HTTPRequest.swift */,
 				A3DB4AEC2BBABD8C00E88EC5 /* HTTPClient.swift */,
-				A3DB4AEE2BBAC42100E88EC5 /* HTTPService.swift */,
+				A3DB4AEE2BBAC42100E88EC5 /* AppHTTPClient.swift */,
 				A3DB49E12BBAAF5B00E88EC5 /* AppRestBackend.swift */,
 				A3DB49E22BBAAF5B00E88EC5 /* Responses */,
 				A3DB49E92BBAAF5B00E88EC5 /* Models */,
@@ -1808,7 +1808,7 @@
 				A3DB4A2A2BBAAF5C00E88EC5 /* SignUpViewController.swift in Sources */,
 				A3DB4A1F2BBAAF5C00E88EC5 /* SceneCoordinatorable.swift in Sources */,
 				A3DB4AD92BBAB90500E88EC5 /* UserDefaults+FirstLaunch.swift in Sources */,
-				A3DB4AEF2BBAC42100E88EC5 /* HTTPService.swift in Sources */,
+				A3DB4AEF2BBAC42100E88EC5 /* AppHTTPClient.swift in Sources */,
 				A3DB4A582BBAAF5D00E88EC5 /* InputFieldRadioButtonViewModel.swift in Sources */,
 				A3DB4A562BBAAF5D00E88EC5 /* RadioButtonsGroup.swift in Sources */,
 				A3DB4A1C2BBAAF5C00E88EC5 /* SceneTransition.swift in Sources */,
@@ -1945,6 +1945,7 @@
 				INFOPLIST_FILE = "ios-starter/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2089,6 +2090,7 @@
 				INFOPLIST_FILE = "ios-starter/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2119,6 +2121,7 @@
 				INFOPLIST_FILE = "ios-starter/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

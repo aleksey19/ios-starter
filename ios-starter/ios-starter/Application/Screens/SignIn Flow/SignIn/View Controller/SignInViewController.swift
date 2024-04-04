@@ -59,7 +59,7 @@ class SignInViewController: UIViewController {
     // MARK: - View setup
     
     private func setupView() {
-        navigationController?.isNavigationBarHidden = true
+        title = "Sign In"
         
         view.backgroundColor = .mainBg
         

@@ -39,6 +39,8 @@ class AlertViewController: UIViewController {
     private func setupView() {
         titleLabel.isHidden = true
         messageLabel.isHidden = true
+        
+        bgView.layer.cornerRadius = 10
     }
     
     private func setBackgroundColor() {
@@ -46,7 +48,7 @@ class AlertViewController: UIViewController {
                                       execute: { [weak self] in
             UIView.animate(withDuration: TimeInterval(0.3),
                            animations: { [weak self] in
-                self?.view.backgroundColor = .black.withAlphaComponent(0.75)
+                self?.view.backgroundColor = .black.withAlphaComponent(0.5)
             })
         })
     }

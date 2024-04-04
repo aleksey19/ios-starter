@@ -1,5 +1,5 @@
 //
-//  HTTPService.swift
+//  AppHTTPClient.swift
 //  ios-starter
 //
 //  Created by Aleksey Bidnyk on 01.04.2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HTTPService: HTTPClient {
+class AppHTTPClient: HTTPClient {
     
     /// API scheme
     let scheme: String = "https"
