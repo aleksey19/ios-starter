@@ -13,7 +13,7 @@ final class MainFlowCoordinator: SceneCoordinator, FlowSceneCoordinatable {
     internal var finishCompletion: SceneTransitionCompletion
     
     override func start() {
-        showMain()
+        showTabBarMain()
     }
     
     override func finish() {

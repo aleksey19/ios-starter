@@ -16,6 +16,8 @@ class SettingsViewController: UIViewController {
         
         title = "Settings"
         
+        view.backgroundColor = .cardsBg
+        
         bindViewModel()
     }
     
