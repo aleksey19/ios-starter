@@ -6,14 +6,16 @@
 	<string>api.com</string>
 	<key>config</key>
 	<string>Production</string>
-    <key>flags</key>
-    <dict>
-        <key>isDevelopment</key>
-        <false/>
-        <key>shouldCacheAllNetworkData</key>
-        <true/>
-        <key>shouldCacheOnlyImages</key>
-        <true/>
-    </dict>
+	<key>flags</key>
+	<dict>
+		<key>startFromMainScreen</key>
+		<true/>
+		<key>isDevelopment</key>
+		<false/>
+		<key>shouldCacheAllNetworkData</key>
+		<true/>
+		<key>shouldCacheOnlyImages</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

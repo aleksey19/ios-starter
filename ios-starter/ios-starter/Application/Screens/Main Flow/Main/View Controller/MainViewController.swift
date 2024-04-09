@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
 
         title = "Main"
         
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .cardsBg
         
         let label = UILabel()
         label.text = "Welcome! By the way, look at this gorgeous emerald car!"

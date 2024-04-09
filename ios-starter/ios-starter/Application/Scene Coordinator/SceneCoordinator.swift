@@ -48,13 +48,20 @@ class SceneCoordinator: SceneCoordinatorable {
         let viewModel = SplashViewModel()
         self.transition(to: Scene.splash(viewModel))
         
+        // Change flag in Config.plist to start from sign in or main screen
+        if let flags = ConfigLoader.parseConfig().flags {
+            if flags.startFromMainScreen == true {
+                startMainFlow()
+            } else {
+                startSignInFlow()
+            }
+        }
+        
 //        if isActiveSession {
 //            startMainFlow()
 //        } else {
 //            startSignInFlow()
 //        }
-        
-        startMainFlow()
     }
     
     func finish() {

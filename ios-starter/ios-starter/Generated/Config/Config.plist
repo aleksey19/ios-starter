@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>apiUrl</key>
-	<string>dev-api.com</string>
+	<string>api.com</string>
 	<key>config</key>
-	<string>Development</string>
+	<string>Production</string>
 	<key>flags</key>
 	<dict>
-		<key>isDevelopment</key>
+		<key>startFromMainScreen</key>
 		<true/>
-        <key>shouldCacheAllNetworkData</key>
-        <false/>
-        <key>shouldCacheOnlyImages</key>
-        <true/>
+		<key>isDevelopment</key>
+		<false/>
+		<key>shouldCacheAllNetworkData</key>
+		<true/>
+		<key>shouldCacheOnlyImages</key>
+		<true/>
 	</dict>
 </dict>
 </plist>

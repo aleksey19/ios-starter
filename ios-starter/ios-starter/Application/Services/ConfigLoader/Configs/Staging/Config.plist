@@ -6,14 +6,16 @@
 	<string>staging-api.com</string>
 	<key>config</key>
 	<string>Staging</string>
-    <key>flags</key>
-    <dict>
-        <key>isDevelopment</key>
-        <true/>
-        <key>shouldCacheAllNetworkData</key>
-        <false/>
-        <key>shouldCacheOnlyImages</key>
-        <true/>
-    </dict>
+	<key>flags</key>
+	<dict>
+		<key>startFromMainScreen</key>
+		<true/>
+		<key>isDevelopment</key>
+		<true/>
+		<key>shouldCacheAllNetworkData</key>
+		<false/>
+		<key>shouldCacheOnlyImages</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

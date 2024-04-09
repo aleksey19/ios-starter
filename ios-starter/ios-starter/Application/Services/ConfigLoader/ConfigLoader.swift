@@ -33,6 +33,7 @@ struct Configuration: Decodable {
 }
 
 struct ConfigurationFlags: Decodable {
+    let startFromMainScreen: Bool
     let isDevelopment: Bool
     let shouldCacheAllNetworkData: Bool
     let shouldCacheOnlyImages: Bool

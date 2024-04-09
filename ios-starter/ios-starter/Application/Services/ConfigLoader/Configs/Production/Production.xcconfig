@@ -8,7 +8,11 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-XCC_BUNDLE_ID = com.abidnyk.ios-starter
-XCC_BUNDLE_NAME = iOS-Starter
+// Silence pods warnings in the terminal after installing dependencies
+#include "Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter.debug-prod.xcconfig"
+#include "Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter.release-prod.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.abidnyk.ios-starter
+PRODUCT_NAME = Starter
 XCC_CONFIG_PATH = Production/Config.plist
 FIREBASE_CONFIG_PATH = Production/GoogleService-Info.plist

@@ -8,12 +8,14 @@
 	<string>Development</string>
 	<key>flags</key>
 	<dict>
+		<key>startFromMainScreen</key>
+		<false/>
 		<key>isDevelopment</key>
 		<true/>
-        <key>shouldCacheAllNetworkData</key>
-        <false/>
-        <key>shouldCacheOnlyImages</key>
-        <true/>
+		<key>shouldCacheAllNetworkData</key>
+		<false/>
+		<key>shouldCacheOnlyImages</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
