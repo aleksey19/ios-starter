@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3DB49362BBAAE6100E88EC5"
-               BuildableName = "iOS-Starter.app"
+               BuildableName = "Starter.app"
                BlueprintName = "ios-starter"
                ReferencedContainer = "container:ios-starter.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3DB49362BBAAE6100E88EC5"
-            BuildableName = "iOS-Starter.app"
+            BuildableName = "Starter.app"
             BlueprintName = "ios-starter"
             ReferencedContainer = "container:ios-starter.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3DB49362BBAAE6100E88EC5"
-            BuildableName = "iOS-Starter.app"
+            BuildableName = "Starter.app"
             BlueprintName = "ios-starter"
             ReferencedContainer = "container:ios-starter.xcodeproj">
          </BuildableReference>

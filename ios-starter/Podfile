@@ -11,9 +11,6 @@ def pods
   pod 'RxOptional'
   pod 'RxDataSources'
   
-  # Database
-  pod 'RealmSwift', '~> 10.5.2'
-  
   # Firebase
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
