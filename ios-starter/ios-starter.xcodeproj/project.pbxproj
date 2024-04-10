@@ -21,7 +21,6 @@
 		A3DB4A202BBAAF5C00E88EC5 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49562BBAAF5B00E88EC5 /* SceneCoordinator.swift */; };
 		A3DB4A212BBAAF5C00E88EC5 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49582BBAAF5B00E88EC5 /* MainFlowCoordinator.swift */; };
 		A3DB4A222BBAAF5C00E88EC5 /* MainFlowCoordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49592BBAAF5B00E88EC5 /* MainFlowCoordinatable.swift */; };
-		A3DB4A232BBAAF5C00E88EC5 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB495B2BBAAF5B00E88EC5 /* Authorization.swift */; };
 		A3DB4A242BBAAF5C00E88EC5 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB495C2BBAAF5B00E88EC5 /* AppSession.swift */; };
 		A3DB4A252BBAAF5C00E88EC5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49612BBAAF5B00E88EC5 /* SplashViewController.swift */; };
 		A3DB4A262BBAAF5C00E88EC5 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49632BBAAF5B00E88EC5 /* SplashViewModel.swift */; };
@@ -120,8 +119,6 @@
 		A3DB4A852BBAAF5D00E88EC5 /* Encodable+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0A2BBAAF5B00E88EC5 /* Encodable+Parse.swift */; };
 		A3DB4A862BBAAF5D00E88EC5 /* Encodable+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0B2BBAAF5B00E88EC5 /* Encodable+Serialization.swift */; };
 		A3DB4A872BBAAF5D00E88EC5 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0C2BBAAF5B00E88EC5 /* Encodable+Dictionary.swift */; };
-		A3DB4A882BBAAF5D00E88EC5 /* RESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0D2BBAAF5B00E88EC5 /* RESTService.swift */; };
-		A3DB4A892BBAAF5D00E88EC5 /* RESTService+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0E2BBAAF5B00E88EC5 /* RESTService+App.swift */; };
 		A3DB4A8A2BBAAF5D00E88EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB4A0F2BBAAF5B00E88EC5 /* SceneDelegate.swift */; };
 		A3DB4A8B2BBAAF5D00E88EC5 /* spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A112BBAAF5B00E88EC5 /* spinner.json */; };
 		A3DB4A8C2BBAAF5D00E88EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DB4A122BBAAF5B00E88EC5 /* Assets.xcassets */; };
@@ -273,7 +270,6 @@
 		A3DB49D92BBAAF5B00E88EC5 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		A3DB49DB2BBAAF5B00E88EC5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A3DB49DC2BBAAF5B00E88EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3DB49E12BBAAF5B00E88EC5 /* AppRestBackend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRestBackend.swift; sourceTree = "<group>"; };
 		A3DB49E42BBAAF5B00E88EC5 /* RegisterPushNotificationsTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPushNotificationsTokenResponse.swift; sourceTree = "<group>"; };
 		A3DB49E52BBAAF5B00E88EC5 /* UnregisterPushNotificationsTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregisterPushNotificationsTokenResponse.swift; sourceTree = "<group>"; };
 		A3DB49E62BBAAF5B00E88EC5 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -298,13 +294,10 @@
 		A3DB4A0A2BBAAF5B00E88EC5 /* Encodable+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Parse.swift"; sourceTree = "<group>"; };
 		A3DB4A0B2BBAAF5B00E88EC5 /* Encodable+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Serialization.swift"; sourceTree = "<group>"; };
 		A3DB4A0C2BBAAF5B00E88EC5 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
-		A3DB4A0D2BBAAF5B00E88EC5 /* RESTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTService.swift; sourceTree = "<group>"; };
-		A3DB4A0E2BBAAF5B00E88EC5 /* RESTService+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RESTService+App.swift"; sourceTree = "<group>"; };
 		A3DB4A0F2BBAAF5B00E88EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A3DB4A112BBAAF5B00E88EC5 /* spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinner.json; sourceTree = "<group>"; };
 		A3DB4A122BBAAF5B00E88EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3DB4A142BBAAF5B00E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A3DB4A162BBAAF5B00E88EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3DB4A182BBAAF5B00E88EC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3DB4A902BBAB90400E88EC5 /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
 		A3DB4A922BBAB90400E88EC5 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -1032,7 +1025,6 @@
 			children = (
 				A3DB49E02BBAAF5B00E88EC5 /* App */,
 				A3DB49FE2BBAAF5B00E88EC5 /* Flow Services */,
-				A3DB4A082BBAAF5B00E88EC5 /* Rest Service */,
 			);
 			path = REST;
 			sourceTree = "<group>";
@@ -1044,10 +1036,9 @@
 				A3DB4AF02BBACC4600E88EC5 /* HTTPRequest.swift */,
 				A3DB4AEC2BBABD8C00E88EC5 /* HTTPClient.swift */,
 				A3DB4AEE2BBAC42100E88EC5 /* AppHTTPClient.swift */,
-				A3DB49E12BBAAF5B00E88EC5 /* AppRestBackend.swift */,
 				A3DB49E22BBAAF5B00E88EC5 /* Responses */,
-				A3DB49E92BBAAF5B00E88EC5 /* Models */,
 				A3DB49EC2BBAAF5B00E88EC5 /* Requests */,
+				A3DB49E92BBAAF5B00E88EC5 /* Models */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1211,16 +1202,6 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
-		A3DB4A082BBAAF5B00E88EC5 /* Rest Service */ = {
-			isa = PBXGroup;
-			children = (
-				A3DB4A092BBAAF5B00E88EC5 /* Encodable */,
-				A3DB4A0D2BBAAF5B00E88EC5 /* RESTService.swift */,
-				A3DB4A0E2BBAAF5B00E88EC5 /* RESTService+App.swift */,
-			);
-			path = "Rest Service";
-			sourceTree = "<group>";
-		};
 		A3DB4A092BBAAF5B00E88EC5 /* Encodable */ = {
 			isa = PBXGroup;
 			children = (
@@ -1239,7 +1220,6 @@
 				A3DB4A122BBAAF5B00E88EC5 /* Assets.xcassets */,
 				A3C8F46B2BBD861000186E8B /* SplashScreen.storyboard */,
 				A3DB4A132BBAAF5B00E88EC5 /* LaunchScreen.storyboard */,
-				A3DB4A152BBAAF5B00E88EC5 /* Main.storyboard */,
 				A3DB4A182BBAAF5B00E88EC5 /* Info.plist */,
 			);
 			path = Resources;
@@ -1264,6 +1244,7 @@
 			isa = PBXGroup;
 			children = (
 				A3DB4A902BBAB90400E88EC5 /* Rotatable.swift */,
+				A3DB4A092BBAAF5B00E88EC5 /* Encodable */,
 				A3DB4A932BBAB90400E88EC5 /* Error */,
 				A3DB4A952BBAB90400E88EC5 /* Extensions */,
 				A3DB4A912BBAB90400E88EC5 /* Fonts */,
@@ -1741,7 +1722,6 @@
 				A3DB4AD32BBAB90500E88EC5 /* UIView+KeyboardObserver.swift in Sources */,
 				A3DB4ACF2BBAB90500E88EC5 /* UIButton+Style.swift in Sources */,
 				A3DB4A552BBAAF5D00E88EC5 /* MainViewModel.swift in Sources */,
-				A3DB4A892BBAAF5D00E88EC5 /* RESTService+App.swift in Sources */,
 				A3DB4A5A2BBAAF5D00E88EC5 /* InputForm.swift in Sources */,
 				A3DB4A382BBAAF5C00E88EC5 /* SignInFieldType.swift in Sources */,
 				A3DB4AD12BBAB90500E88EC5 /* UIView+Constraints.swift in Sources */,
@@ -1756,7 +1736,6 @@
 				A3DB4A372BBAAF5C00E88EC5 /* SignInForm.swift in Sources */,
 				A3DB4A332BBAAF5C00E88EC5 /* ResetPasswordViewController.swift in Sources */,
 				A3DB4A352BBAAF5C00E88EC5 /* ResetPasswordViewModelCompatible.swift in Sources */,
-				A3DB4A882BBAAF5D00E88EC5 /* RESTService.swift in Sources */,
 				A3DB4A642BBAAF5D00E88EC5 /* RadioButtonsTableViewCell.swift in Sources */,
 				A3DB4A3B2BBAAF5C00E88EC5 /* SignInViewModelCompatible.swift in Sources */,
 				A3DB4A812BBAAF5D00E88EC5 /* SignInService.swift in Sources */,
@@ -1807,7 +1786,6 @@
 				A3DB4A202BBAAF5C00E88EC5 /* SceneCoordinator.swift in Sources */,
 				A3DB4A212BBAAF5C00E88EC5 /* MainFlowCoordinator.swift in Sources */,
 				A3DB4A6B2BBAAF5D00E88EC5 /* ProgressHUD.swift in Sources */,
-				A3DB4A232BBAAF5C00E88EC5 /* Authorization.swift in Sources */,
 				A3DB4ADE2BBAB90500E88EC5 /* UITextField+Rx.swift in Sources */,
 				A3DB4A502BBAAF5C00E88EC5 /* SettingsViewModel.swift in Sources */,
 				A3DB4A702BBAAF5D00E88EC5 /* RegisterPushNotificationsTokenResponse.swift in Sources */,
@@ -1865,14 +1843,6 @@
 				A3DB4A142BBAAF5B00E88EC5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A3DB4A152BBAAF5B00E88EC5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3DB4A162BBAAF5B00E88EC5 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
