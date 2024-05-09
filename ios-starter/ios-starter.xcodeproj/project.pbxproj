@@ -79,9 +79,6 @@
 		A3DB4A5B2BBAAF5D00E88EC5 /* InputFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49C12BBAAF5B00E88EC5 /* InputFieldViewModel.swift */; };
 		A3DB4A5C2BBAAF5D00E88EC5 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C32BBAAF5B00E88EC5 /* InputView.xib */; };
 		A3DB4A5D2BBAAF5D00E88EC5 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49C42BBAAF5B00E88EC5 /* InputView.swift */; };
-		A3DB4A5E2BBAAF5D00E88EC5 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C62BBAAF5B00E88EC5 /* ButtonTableViewCell.xib */; };
-		A3DB4A5F2BBAAF5D00E88EC5 /* StateAndZipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C72BBAAF5B00E88EC5 /* StateAndZipTableViewCell.xib */; };
-		A3DB4A602BBAAF5D00E88EC5 /* TextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49C82BBAAF5B00E88EC5 /* TextInputTableViewCell.xib */; };
 		A3DB4A612BBAAF5D00E88EC5 /* StateAndZipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49C92BBAAF5B00E88EC5 /* StateAndZipTableViewCell.swift */; };
 		A3DB4A622BBAAF5D00E88EC5 /* RadioButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB49CA2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.xib */; };
 		A3DB4A632BBAAF5D00E88EC5 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB49CB2BBAAF5B00E88EC5 /* TextInputTableViewCell.swift */; };
@@ -253,9 +250,6 @@
 		A3DB49C12BBAAF5B00E88EC5 /* InputFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldViewModel.swift; sourceTree = "<group>"; };
 		A3DB49C32BBAAF5B00E88EC5 /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
 		A3DB49C42BBAAF5B00E88EC5 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
-		A3DB49C62BBAAF5B00E88EC5 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
-		A3DB49C72BBAAF5B00E88EC5 /* StateAndZipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StateAndZipTableViewCell.xib; sourceTree = "<group>"; };
-		A3DB49C82BBAAF5B00E88EC5 /* TextInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputTableViewCell.xib; sourceTree = "<group>"; };
 		A3DB49C92BBAAF5B00E88EC5 /* StateAndZipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateAndZipTableViewCell.swift; sourceTree = "<group>"; };
 		A3DB49CA2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioButtonsTableViewCell.xib; sourceTree = "<group>"; };
 		A3DB49CB2BBAAF5B00E88EC5 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
@@ -898,7 +892,7 @@
 				A3DB49BA2BBAAF5B00E88EC5 /* Radio Button Group */,
 				A3DB49BC2BBAAF5B00E88EC5 /* Input Form */,
 				A3DB49C22BBAAF5B00E88EC5 /* Input View */,
-				A3DB49C52BBAAF5B00E88EC5 /* Table View Cell */,
+				A3DB49C52BBAAF5B00E88EC5 /* Table View Cells */,
 				A3DB49CE2BBAAF5B00E88EC5 /* Radio Button */,
 				A3DB49D02BBAAF5B00E88EC5 /* Verification Code */,
 				A3DB49D42BBAAF5B00E88EC5 /* Text Field */,
@@ -935,19 +929,16 @@
 			path = "Input View";
 			sourceTree = "<group>";
 		};
-		A3DB49C52BBAAF5B00E88EC5 /* Table View Cell */ = {
+		A3DB49C52BBAAF5B00E88EC5 /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A3DB49C62BBAAF5B00E88EC5 /* ButtonTableViewCell.xib */,
-				A3DB49C72BBAAF5B00E88EC5 /* StateAndZipTableViewCell.xib */,
-				A3DB49C82BBAAF5B00E88EC5 /* TextInputTableViewCell.xib */,
 				A3DB49C92BBAAF5B00E88EC5 /* StateAndZipTableViewCell.swift */,
-				A3DB49CA2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.xib */,
 				A3DB49CB2BBAAF5B00E88EC5 /* TextInputTableViewCell.swift */,
 				A3DB49CC2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.swift */,
+				A3DB49CA2BBAAF5B00E88EC5 /* RadioButtonsTableViewCell.xib */,
 				A3DB49CD2BBAAF5B00E88EC5 /* ButtonTableViewCell.swift */,
 			);
-			path = "Table View Cell";
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 		A3DB49CE2BBAAF5B00E88EC5 /* Radio Button */ = {
@@ -1591,7 +1582,6 @@
 				A3E4A6D92BBBF6EC00E775E2 /* Development.xcconfig in Resources */,
 				A3E4A6DB2BBBF6EC00E775E2 /* Production.xcconfig in Resources */,
 				A3DB4A682BBAAF5D00E88EC5 /* VerificationCodeView.xib in Resources */,
-				A3DB4A5F2BBAAF5D00E88EC5 /* StateAndZipTableViewCell.xib in Resources */,
 				A3DB4A5C2BBAAF5D00E88EC5 /* InputView.xib in Resources */,
 				A3DB4A8C2BBAAF5D00E88EC5 /* Assets.xcassets in Resources */,
 				A3DB4A622BBAAF5D00E88EC5 /* RadioButtonsTableViewCell.xib in Resources */,
@@ -1599,9 +1589,7 @@
 				A3DB4A4E2BBAAF5C00E88EC5 /* SettingsViewController.xib in Resources */,
 				A3DB4A4B2BBAAF5C00E88EC5 /* DropDownViewController.xib in Resources */,
 				A3DB4A8D2BBAAF5D00E88EC5 /* LaunchScreen.storyboard in Resources */,
-				A3DB4A602BBAAF5D00E88EC5 /* TextInputTableViewCell.xib in Resources */,
 				A3C8F46D2BBD861000186E8B /* SplashScreen.storyboard in Resources */,
-				A3DB4A5E2BBAAF5D00E88EC5 /* ButtonTableViewCell.xib in Resources */,
 				A3E4A6D72BBBF6EC00E775E2 /* Staging.xcconfig in Resources */,
 				A3DB4A4A2BBAAF5C00E88EC5 /* DropDownItemTableViewCell.xib in Resources */,
 				A3DB4A522BBAAF5D00E88EC5 /* MainViewController.xib in Resources */,

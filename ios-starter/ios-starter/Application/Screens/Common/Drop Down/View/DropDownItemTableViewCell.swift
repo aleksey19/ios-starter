@@ -22,5 +22,4 @@ class DropDownItemTableViewCell: UITableViewCell {
         
         indicatorImageView.isHidden = !selected
     }
-    
 }

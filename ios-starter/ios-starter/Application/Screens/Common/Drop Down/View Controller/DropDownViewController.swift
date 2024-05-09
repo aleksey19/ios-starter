@@ -36,7 +36,7 @@ class DropDownViewController: UIViewController {
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = 5
         }
-        tableView.registerCell(ofType: DropDownItemTableViewCell.self)
+        tableView.registerCell(DropDownItemTableViewCell.reuseID)
         
         setBackgroundColor()
     }

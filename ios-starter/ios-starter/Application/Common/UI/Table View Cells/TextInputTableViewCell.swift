@@ -17,9 +17,22 @@ class TextInputTableViewCell: UITableViewCell {
         inputValueView.prepareForReuse()
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    // MARK: - Init
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        selectionStyle = .none
+        backgroundColor = .clear
+        
+        initControls()
+    }
+    
+    private func initControls() {
         inputValueView = InputView.loadFromNIB()
         inputValueView.backgroundColor = .clear
         inputValueView.translatesAutoresizingMaskIntoConstraints = false
@@ -33,6 +46,8 @@ class TextInputTableViewCell: UITableViewCell {
             inputValueView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0),
         ])
     }
+    
+    // MARK: - Bind
     
     func bind(viewModel: InputFieldViewModel,
               showLeftView: Bool = false,

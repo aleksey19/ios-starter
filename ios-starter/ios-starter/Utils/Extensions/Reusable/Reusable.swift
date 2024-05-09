@@ -12,6 +12,7 @@ protocol Reusable {
 }
 
 extension Reusable {
+    /// ID for reusable components: UITableViewCell, UICollectionViewCell etc.
     static var reuseID: String {
         return String(describing: self)
     }
@@ -29,12 +30,14 @@ extension UIViewController: Reusable {
 
 extension UITableView {
     
-    func registerCells<T: UITableViewCell>(ofTypes cellTypes: [T.Type]) {
-        cellTypes.forEach({ registerCell(ofType: $0) })
+    /// Register cell witn the nib.
+    func registerCell(_ nibName: String) {
+        self.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: nibName)
     }
     
-    func registerCell<T: UITableViewCell>(ofType cellType: T.Type) {
-        self.register(UINib(nibName: cellType.reuseID, bundle: nil), forCellReuseIdentifier: cellType.reuseID)
+    /// Register cell without the nib. In this case cell should be configured in the code.
+    func registerCell<T: UITableViewCell>(_ type: T.Type) {
+        self.register(T.self, forCellReuseIdentifier: type.reuseID)
     }
     
     func registerHeaderFooterView<T: UITableViewHeaderFooterView>(ofType viewType: T.Type) {
@@ -60,7 +63,17 @@ extension UITableView {
 extension UICollectionView {
     
     func registerCell<T: UICollectionViewCell>(ofType cellType: T.Type) {
-        self.register(UINib(nibName: cellType.reuseID, bundle: nil), forCellWithReuseIdentifier: cellType.reuseID)        
+        self.register(UINib(nibName: cellType.reuseID, bundle: nil), forCellWithReuseIdentifier: cellType.reuseID)
+    }
+    
+    /// Register cell witn the nib.
+    func registerCell(_ nibName: String) {
+        self.register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: nibName)
+    }
+    
+    /// Register cell without the nib. In this case cell should be configured in the code.
+    func registerCell<T: UITableViewCell>(_ type: T.Type) {
+        self.register(T.self, forCellWithReuseIdentifier: T.reuseID)
     }
     
     func dequeueReusableCell<T>(ofType cellType: T.Type = T.self, at indexPath: IndexPath) -> T where T: UICollectionViewCell {

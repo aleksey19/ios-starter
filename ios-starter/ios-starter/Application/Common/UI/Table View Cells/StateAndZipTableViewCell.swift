@@ -20,9 +20,22 @@ class StateAndZipTableViewCell: UITableViewCell {
         inputZipValueView.prepareForReuse()
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    // MARK: - Init
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        selectionStyle = .none
+        backgroundColor = .clear
+        
+        initControls()
+    }
+    
+    private func initControls() {
         inputStateValueView = InputView.loadFromNIB()
         inputStateValueView.backgroundColor = .clear
         inputStateValueView.translatesAutoresizingMaskIntoConstraints = false
@@ -49,13 +62,11 @@ class StateAndZipTableViewCell: UITableViewCell {
         ])
     }
     
+    // MARK: - Bind
+    
     func bind(stateViewModel: SignUpStateFieldViewModel,
               showStateDropDownTrigger: PublishSubject<Void>,
               zipViewModel: InputFieldViewModel) {
-//        inputStateValueView.bindViewModel(stateViewModel,
-//                                          pickerView: statePicker,
-//                                          toolBar: toolBar,
-//                                          showRightArrowView: true)
         inputStateValueView.bindViewModel(stateViewModel, showDropDownTrigger: showStateDropDownTrigger)
         inputZipValueView.bindViewModel(zipViewModel)
     }

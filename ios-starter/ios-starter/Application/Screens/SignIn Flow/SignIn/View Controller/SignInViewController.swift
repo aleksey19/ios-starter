@@ -66,8 +66,8 @@ class SignInViewController: UIViewController {
         tableView = UITableView()
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
-        tableView.registerCell(ofType: TextInputTableViewCell.self)
-        tableView.registerCell(ofType: ButtonTableViewCell.self)
+        tableView.registerCell(TextInputTableViewCell.self)
+        tableView.registerCell(ButtonTableViewCell.self)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(tableView)

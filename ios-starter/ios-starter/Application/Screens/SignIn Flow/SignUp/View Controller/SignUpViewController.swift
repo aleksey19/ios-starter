@@ -60,10 +60,10 @@ class SignUpViewController: UIViewController {
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
         tableView.estimatedSectionHeaderHeight = 0
-        tableView.registerCell(ofType: TextInputTableViewCell.self)
-        tableView.registerCell(ofType: RadioButtonsTableViewCell.self)
-        tableView.registerCell(ofType: StateAndZipTableViewCell.self)
-        tableView.registerCell(ofType: ButtonTableViewCell.self)
+        tableView.registerCell(TextInputTableViewCell.self)
+        tableView.registerCell(RadioButtonsTableViewCell.reuseID)
+        tableView.registerCell(StateAndZipTableViewCell.self)
+        tableView.registerCell(ButtonTableViewCell.self)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         if #available(iOS 15.0, *) {
